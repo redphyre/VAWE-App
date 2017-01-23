@@ -6,7 +6,7 @@
 		padding: 0;
 	}
 	.ui-icon-csm-home:after {
-		background-image: url(../vawe-app/www/img/Home%20Green.png);
+		background-image: url(img/Home%20Green.png);
 	}
 	.ui-btn-active {
 		background-color: #6EB02D!important;
@@ -19,57 +19,20 @@
 		margin-right:10px!important;
 	}
 	.facebook {
-		background-image:url(../vawe-app/www/img/facebook-login-blue.png);
+		background-image:url(img/facebook-login-blue.png);
 	}
 	.google {
-		background-image:url(../vawe-app/www/img/google-sign-in.png);
+		background-image:url(img/google-sign-in.png);
 	}
 </style>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../vawe-app/www/css/jquery.mobile-1.4.5.css" />
-<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
-<script type="text/javascript" src="../vawe-app/www/cordova.js"></script>
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript">
-
-    var map;
 	var login = "false";
-    document.addEventListener("deviceready", function() {
-		
-      var div = document.getElementById("map_canvas");
-
-      // Initialize the map view
-      map = plugin.google.maps.Map.getMap(div);
-
-      // Wait until the map is ready status.
-      map.addEventListener(plugin.google.maps.event.MAP_READY, onMapReady);
-		  
-	  map.getMyLocation(function(location) {
-	  var msg = ["Current your location:\n",
-		"latitude:" + location.latLng.lat,
-		"longitude:" + location.latLng.lng,
-		"speed:" + location.speed,
-		"time:" + location.time,
-		"bearing:" + location.bearing].join("\n");
-	
-	  map.addMarker({
-		'position': location.latLng,
-		'title': msg
-	  }, function(marker) {
-		marker.showInfoWindow();
-	  });
-	});
-    }, false);
-
-    function onMapReady() {
-      var button = document.getElementById("button");
-      button.addEventListener("click", onBtnClicked, false);
-    }
-
-    function onBtnClicked() {
-      map.showDialog();
-    }
 	$(document).on( "pageinit", "#vendors", function() {
 		var filter = 0;
 		 $.ajax({
@@ -103,7 +66,7 @@
 </head>
 <body>
 <div id="page1" data-role="page">
-	<div data-role="header" data-position="fixed" align="center"><img src="../vawe-app/www/img/VAWE-long-300x30-transparent.png" width="300" height="30" alt=""/></div>
+	<div data-role="header" data-position="fixed" align="center"><img src="img/VAWE-long-300x30-transparent.png" width="300" height="30" alt=""/></div>
 	<div data-role="content" style="margin:0; padding:0;">
 		Main Content
 	</div>
@@ -120,7 +83,7 @@
 	</div>
 </div>
 <div id="vendors" data-role="page" data-transition="slideup">
-	<div data-role="header" data-position="fixed" align="center"><img src="../vawe-app/www/img/VAWE-long-300x30-transparent.png" width="300" height="30" alt=""/></div>
+	<div data-role="header" data-position="fixed" align="center"><img src="img/VAWE-long-300x30-transparent.png" width="300" height="30" alt=""/></div>
 	<div data-role="content" style="margin:0px; padding:0px;">
 		<ul id="results" class="ui-btn" data-filter="true" data-filter-placeholder="Search vendors..." data-role="listview" style="padding-left:10px; padding-right:10px;">
 		</ul>
@@ -138,10 +101,9 @@
 	</div>
 </div>
 <div id="map" data-role="page" data-transition="slideup">
-	<div data-role="header" data-position="fixed" align="center"><img src="../vawe-app/www/img/VAWE-long-300x30-transparent.png" width="300" height="30" alt=""/></div>
+	<div data-role="header" data-position="fixed" align="center"><img src="img/VAWE-long-300x30-transparent.png" width="300" height="30" alt=""/></div>
 	<div data-role="content" style="margin:0px; padding:0px;">
-		<div style="width:100%;height:400px; min-height:90%;" id="map_canvas"></div>
-		<button id="button">Navigate</button>
+		<div style="width:100%;height:716px; min-height:90%;" id="map-canvas"></div>
 	</div>
 	<div data-role="footer" data-position="fixed">
 		<div data-role="navbar" class="ui-nodisc-icon">
@@ -156,7 +118,7 @@
 	</div>
 </div>
 <div id="vendor-page" data-role="page" data-transition="flip">
-	<div data-role="header" data-position="fixed" align="center"><img src="../vawe-app/www/img/VAWE-long-300x30-transparent.png" width="300" height="30" alt=""/></div>
+	<div data-role="header" data-position="fixed" align="center"><img src="img/VAWE-long-300x30-transparent.png" width="300" height="30" alt=""/></div>
 	<a href="#" data-rel="back" data-icon="back" data-iconpos="left" style="margin-left:10px; margin-right:10px;" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-shadow-icon ui-corner-all">Back</a>
 	<div id="vendor-data" data-role="content">
 	</div>
@@ -193,15 +155,96 @@
 			<input type="text" id="user" name="user" placeholder="Username"/>
 			<input type="password" id="pass" name="pass" placeholder="Password"/>
 			<input type="button" id="login-submit" value="Login"/>
-			<h6><a href="../vawe-app/www/reset.html">Forgot password? Click here to reset.</a></h6>
+			<h6><a href="reset.html">Forgot password? Click here to reset.</a></h6>
 		</form>
 		<br/>
 		<a href="#" class="ui-btn ui-btn-b">Join VAWE</a>
 	</div>
 </div>
-<div data-role="panel" id="profile" data-position="right" data-display="overlay" data-theme="b" class="ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-b ui-panel-animate ui-panel-closed">
-	<div class="ui-panel-inner"><h3>My Profile</h3><p>Sample Content</p><a href="#demo-links" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Close panel</a></div>
+<div data-role="panel" id="profile" data-position="right" data-display="overlay" data-theme="a" class="ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-closed">
+	<div class="ui-panel-inner">
+	<h3>My Profile</h3>
+	<br/>
+	<p>
+	<ul data-role="listview" data-theme="a">
+		<li class="ui-btn ui-btn-d ui-btn-text ui-btn-icon-right ui-icon-calendar">My Events</li>
+		<li class="ui-btn ui-btn-d ui-btn-text ui-btn-icon-right ui-icon-camera">My Photos</li>
+		<li class="ui-btn ui-btn-d ui-btn-text ui-btn-icon-right ui-icon-heart">Favorites</li>
+		<li class="ui-btn ui-btn-d ui-btn-text ui-btn-icon-right ui-icon-mail">Messages</li>
+		<li class="ui-btn ui-btn-d ui-btn-text ui-btn-icon-right ui-icon-shop">Registry</li>
+		<li class="ui-btn ui-btn-d ui-btn-text ui-btn-icon-right ui-icon-gear">Settings</li>
+		<li class="ui-btn ui-btn-d ui-btn-text ui-btn-icon-right ui-icon-back">Logout</li>
+	</ul>
+	</p>
+	<a href="#demo-links" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline"></a></div>
 	</div>
+	<script type="text/javascript">
+	  // This example creates circles on the map, representing populations in North
+      // America.
+
+      // First, create an object containing LatLng and population for each city.
+      var citymap = {
+        Birchwood: {
+          center: {lat: 45.640301, lng: -91.577599},
+          population: 442
+        }
+      };
+
+      function initMap() {
+        // Create the map.
+        var map = new google.maps.Map(document.getElementById('map-canvas'), {
+          zoom: 12,
+          center: {lat: 45.640301, lng: -91.577599},
+          mapTypeId: 'roadmap'
+        });
+
+        // Construct the circle for each value in citymap.
+        // Note: We scale the area of the circle based on the population.
+        for (var city in citymap) {
+          // Add the circle for this city to the map.
+          var cityCircle = new google.maps.Circle({
+            strokeColor: '#6EB02D',
+            strokeOpacity: 1.0,
+            strokeWeight: 3,
+            fillColor: '#ED248F',
+            fillOpacity: 0.35,
+            map: map,
+            center: citymap[city].center,
+            radius: Math.sqrt(citymap[city].population) * 100
+          });
+        }
+		  
+        var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">My Event</h1>'+
+            '<div id="bodyContent">'+
+            'This is the location of my event party. ' +
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+        	content: contentString
+        });
+		  
+		marker = new google.maps.Marker({
+			map: map,
+			draggable: true,
+			animation: google.maps.Animation.DROP,
+			position: {lat: 45.640301, lng: -91.577599},
+			title: 'My Event'
+			
+		});
+		  
+		marker.addListener('click', function() {
+			infowindow.open(map, marker);
+		});
+
+	}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpoSVdtZlPqe8aHatLN8JdUrtpP6gh2D4&callback=initMap">
+    </script>
 </body>
 	<script type="text/javascript">
 		function loginCheck() {
@@ -242,5 +285,5 @@
 				}
 			});
 		});
-	</script>
+</script>
 </html>
