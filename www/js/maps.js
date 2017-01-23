@@ -1,42 +1,62 @@
-/*
- * Google Maps documentation: http://code.google.com/apis/maps/documentation/javascript/basics.html
- * Geolocation documentation: http://dev.w3.org/geo/api/spec-source.html
- */
-var login = "false";
-$( document ).on( "pagecreate", "#map", function() {
-	var defaultLatLng = new google.maps.LatLng(34.0983425, -118.3267434);  // Default to Hollywood, CA when no geolocation support
+	<script type="text/javascript">
+	$(document).ready(function($) {
 
-	if ( navigator.geolocation ) {
-		function success(pos) {
-			// Location found, show map with these coordinates
-			drawMap(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
-		}
+      function initMap() {
+		  
+		var citymap = {
+			Birchwood: {
+			  center: {lat: 45.640301, lng: -91.577599},
+			  population: 442
+        }
+      };
+        // Create the map.
+        var map = new google.maps.Map(document.getElementById('map-canvas'), {
+          zoom: 12,
+          center: {lat: 45.640301, lng: -91.577599},
+          mapTypeId: 'roadmap'
+        });
 
-		function fail(error) {
-			drawMap(defaultLatLng);  // Failed to find location, show default map
-		}
+        // Construct the circle for each value in citymap.
+        // Note: We scale the area of the circle based on the population.
+        for (var city in citymap) {
+          // Add the circle for this city to the map.
+          var cityCircle = new google.maps.Circle({
+            strokeColor: '#6EB02D',
+            strokeOpacity: 1.0,
+            strokeWeight: 3,
+            fillColor: '#ED248F',
+            fillOpacity: 0.35,
+            map: map,
+            center: citymap[city].center,
+            radius: Math.sqrt(citymap[city].population) * 100
+          });
+        }
+		  
+        var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">My Event</h1>'+
+            '<div id="bodyContent">'+
+            'This is the location of my event party. ' +
+            '</div>'+
+            '</div>';
 
-		// Find the users current position.  Cache the location for 5 minutes, timeout after 6 seconds
-		navigator.geolocation.getCurrentPosition(success, fail, {maximumAge: 500000, enableHighAccuracy:true, timeout: 6000});
-	} else {
-		drawMap(defaultLatLng);  // No geolocation support, show default map
-	}
-
-	function drawMap(latlng) {
-		var myOptions = {
-			zoom: 10,
-			center: latlng,
-			mapTypeId: google.maps.MapTypeId.ROADMAP
-		};
-
-		var map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
-
-		// Add an overlay to the map of current lat/lng
-		var marker = new google.maps.Marker({
-			position: latlng,
+        var infowindow = new google.maps.InfoWindow({
+        	content: contentString
+        });
+		  
+		marker = new google.maps.Marker({
 			map: map,
-			title: "Greetings!"
+			draggable: true,
+			animation: google.maps.Animation.DROP,
+			position: {lat: 45.640301, lng: -91.577599},
+			title: 'My Event'
+			
+		});
+		  
+		marker.addListener('click', function() {
+			infowindow.open(map, marker);
 		});
 	}
-
-});
+	})(window);
+    </script>
