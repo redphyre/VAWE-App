@@ -7,12 +7,25 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-armsoft-statusbar": {
+    "cordova-plugin-googlemaps": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-armsoft-statusbar"
+            "id": "cordova-plugin-googlemaps"
         },
         "is_top_level": true,
+        "variables": {
+            "API_KEY_FOR_IOS": "AIzaSyDfYHAzjn7XKBSpMVTfhWW-piZT2ZkJAac",
+            "NSLOCATIONWHENINUSEUSAGEDESCRIPTION": "Show your location on the map",
+            "NSLOCATIONALWAYSUSAGEDESCRIPTION": "Trace your location on the map"
+        }
+    },
+    "com.googlemaps.ios": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mapsplugin/cordova-plugin-googlemaps-sdk",
+            "subdir": "."
+        },
+        "is_top_level": false,
         "variables": {}
     }
 }

@@ -1,11 +1,11 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "id": "cordova-plugin-armsoft-statusbar.statusbar",
-        "file": "plugins/cordova-plugin-armsoft-statusbar/www/statusbar.js",
-        "pluginId": "cordova-plugin-armsoft-statusbar",
+        "id": "cordova-plugin-googlemaps.cordova-plugin-googlemaps",
+        "file": "plugins/cordova-plugin-googlemaps/www/googlemaps-cdv-plugin.js",
+        "pluginId": "cordova-plugin-googlemaps",
         "clobbers": [
-            "window.StatusBar"
+            "cordova-plugin-googlemaps"
         ]
     }
 ];
@@ -13,7 +13,8 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "cordova-plugin-whitelist": "1.3.1",
-    "cordova-plugin-armsoft-statusbar": "1.1.0"
+    "com.googlemaps.ios": "2.1.1",
+    "cordova-plugin-googlemaps": "1.4.0"
 };
 // BOTTOM OF METADATA
 });

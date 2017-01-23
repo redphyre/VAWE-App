@@ -24,6 +24,9 @@
 	.google {
 		background-image:url(img/google-sign-in.png);
 	}
+	div[data-role="header"] {
+		margin-top:20px!important;
+	}
 </style>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -125,7 +128,7 @@
 		var filter = 0;
 		 $.ajax({
 			type: "POST",
-			url: "vendorlist.php",
+			url: "https://wii.elementmedia.design/vawe-app/www/vendorlist.php",
 			data: 'filter=' + filter,
 			cache: false,
 			success: function(data) 
@@ -139,7 +142,7 @@
 		$( ":mobile-pagecontainer" ).pagecontainer( "change", "#vendor-page", { transition: "slide" });
 		$.ajax({
 			type: "POST",
-			url: "vendorpull.php",
+			url: "https://wii.elementmedia.design/vawe-app/www/vendorpull.php",
 			data: 'id=' + vendorID,
 			cache: false,
 			success: function(data) 
@@ -292,7 +295,7 @@
 			e.preventDefault();
 			$.ajax({
 				type: "POST",
-				url: "logincheck.php",
+				url: "https://wii.elementmedia.design/vawe-app/www/logincheck.php",
 				data: $("#login-form").serialize(),
 				cache: false,
 				success: function(data)
