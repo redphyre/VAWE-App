@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<style type="text/css">
+body {
+	margin: 0;
+	padding: 0;
+}
+#slides {
+	position: relative;
+	height: 736px;
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+.slide {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	z-index: 1;
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+.showing {
+	opacity: 1;
+	z-index: 2;
+}
+.ui-icon-csm-home:after {
+	background-image: url(img/Home%20Green.png);
+}
+.ui-btn-active {
+	background-color: #6EB02D!important;
+}
+.ui-nodisc-icon.ui-btn:after, .ui-nodisc-icon .ui-btn:after {
+	background-color: #ED248F!important;
+}
+.ui-input-search {
+	margin-left:10px!important;
+	margin-right:10px!important;
+}
+</style>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+</head>
+
+<body>
+<div id="home" data-role="page" data-transition="flip">
+	<div data-role="header" data-position="fixed" align="center"><img src="img/VAWE-long-300x30-transparent.png" width="300" height="30" alt=""/></div>
+	<div id="vendor-data" data-role="content">
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" class="ui-nodisc-icon">
+			<ul>
+				<li><a href="index.html#page1" class="ui-icon-home ui-btn-icon-top">Home</a></li>
+				<li><a href="#" class="ui-icon-calendar ui-btn-icon-top">Events</a></li>
+				<li><a href="index.html#vendors" class="ui-icon-search ui-btn-icon-top">Vendors</a></li>
+				<li><a href="index.html#map" class="ui-icon-location ui-btn-icon-top">Map</a></li>
+				<li><a href="#" class="ui-icon-user ui-btn-icon-top">My Profile</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
