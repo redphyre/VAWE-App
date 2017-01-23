@@ -9,6 +9,9 @@
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.inovatemarketing.vawe"
+        },
+        "cordova-plugin-armsoft-statusbar": {
+            "PACKAGE_NAME": "com.inovatemarketing.vawe"
         }
     },
     "dependent_plugins": {}
