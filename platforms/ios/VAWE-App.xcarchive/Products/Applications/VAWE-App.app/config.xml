@@ -50,6 +50,10 @@
     <feature name="TileOverlay">
         <param name="ios-package" value="TileOverlay" />
     </feature>
+    <feature name="StatusBar">
+        <param name="ios-package" value="CDVStatusBar" />
+        <param name="onload" value="true" />
+    </feature>
     <name>VAWE-App</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -80,4 +84,6 @@
     <preference name="PageLength" value="0" />
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarStyle" value="default" />
 </widget>

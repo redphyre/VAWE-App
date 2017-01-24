@@ -15,6 +15,9 @@
             "NSLOCATIONWHENINUSEUSAGEDESCRIPTION": "Show your location on the map",
             "NSLOCATIONALWAYSUSAGEDESCRIPTION": "Trace your location on the map",
             "PACKAGE_NAME": "com.inovatemarketing.vawe"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.inovatemarketing.vawe"
         }
     },
     "dependent_plugins": {

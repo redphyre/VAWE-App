@@ -86,7 +86,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		IJrtCwljiyI1GRO1hBsWcBtgtZg=
+		pCUDpezdkOKoeBFG3FF772vXSu4=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		Wj7aEZ4K/FJKdFCPpDoIBTyrDM4=
+		Lvyrkf0CjSoGFjff+Op3yynmPCo=
 		</data>
 		<key>GoogleMaps.bundle/GMSCacheStorage.momd/Storage.mom</key>
 		<data>
@@ -837,7 +837,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		pncitIhd/a6VEDxOMnnsKVvu8OA=
+		twM/FkP9kdkcRq7Rt0lKOa55fVk=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -849,7 +849,7 @@
 		</data>
 		<key>config.xml</key>
 		<data>
-		IY/B11BvN4a1OGrzuedvHKMdCHM=
+		lqwuMWthTXF9MtG8PZl45/tVlho=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -857,7 +857,7 @@
 		</data>
 		<key>www/_notes/dwsync.xml</key>
 		<data>
-		cFsMTumUzdkSeJc1lZ7nOvCGnYs=
+		WzkdrGsrm/1YGbS6FiAyhHbfNBw=
 		</data>
 		<key>www/cordova-js-src/exec.js</key>
 		<data>
@@ -873,7 +873,7 @@
 		</data>
 		<key>www/cordova_plugins.js</key>
 		<data>
-		k9WsUANdOTP8wvR0VSLWKu97SSQ=
+		SyUZ8uIbu4ugdCPq7QtHFxEN8bM=
 		</data>
 		<key>www/css/images/ajax-loader.gif</key>
 		<data>
@@ -1025,7 +1025,7 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		1rt3c/pfGyb//GYF1xuKxzqqX+E=
+		hbJB3yWhD+AVVg/hq+VyfRskTR0=
 		</data>
 		<key>www/js/_notes/dwsync.xml</key>
 		<data>
@@ -1066,6 +1066,10 @@
 		<key>www/plugins/cordova-plugin-googlemaps/www/googlemaps-cdv-plugin.js</key>
 		<data>
 		VqO9YK8S/GeKD9GzGOD2HaN1gfo=
+		</data>
+		<key>www/plugins/cordova-plugin-statusbar/www/statusbar.js</key>
+		<data>
+		hDT++3ZaOTp3t16AAFAibxtovj0=
 		</data>
 		<key>www/reset.php</key>
 		<data>
@@ -1310,11 +1314,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IJrtCwljiyI1GRO1hBsWcBtgtZg=
+			pCUDpezdkOKoeBFG3FF772vXSu4=
 			</data>
 			<key>hash2</key>
 			<data>
-			rmTFNldL7lomi0C2+aF1Z1eE/9QVLXZZLLRe+FXvOa8=
+			IqEvHmf8cSnTRO4bvQsnIDiV/7/R2A3o30Gf5X+v1nc=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -1332,11 +1336,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Wj7aEZ4K/FJKdFCPpDoIBTyrDM4=
+			Lvyrkf0CjSoGFjff+Op3yynmPCo=
 			</data>
 			<key>hash2</key>
 			<data>
-			qDt8akfcxkUCgBhYktByaI5YW5IBOKLIhf5Jv0L61jc=
+			3WFupAgAdS6zO1cMgEbbXS99i9yKgVqaTgzUIo1AvWo=
 			</data>
 		</dict>
 		<key>GoogleMaps.bundle/GMSCacheStorage.momd/Storage.mom</key>
@@ -2859,11 +2863,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pncitIhd/a6VEDxOMnnsKVvu8OA=
+			twM/FkP9kdkcRq7Rt0lKOa55fVk=
 			</data>
 			<key>hash2</key>
 			<data>
-			iIJJEs5ajt7R32cGTDe65F2zbr/ZRSJ1Yu/Bde8fDf8=
+			uK/EByKwvol7Us8tjz4S9mxz0VDJsY8kridYpJz+UL0=
 			</data>
 		</dict>
 		<key>archived-expanded-entitlements.xcent</key>
@@ -2881,11 +2885,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IY/B11BvN4a1OGrzuedvHKMdCHM=
+			lqwuMWthTXF9MtG8PZl45/tVlho=
 			</data>
 			<key>hash2</key>
 			<data>
-			u9zFhzb7W2HYeu04G67qsYXQPNDoxbiD6ffdX2z5R4g=
+			5MvZonYlY6MyE8+D3HCZEU7yZ61+1J4rMhr4Zb2fUh4=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>
@@ -2903,11 +2907,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cFsMTumUzdkSeJc1lZ7nOvCGnYs=
+			WzkdrGsrm/1YGbS6FiAyhHbfNBw=
 			</data>
 			<key>hash2</key>
 			<data>
-			cbLOY0lmKn9Zvl0Vyq0TdGAMn843P4cBVvYOAD5Vao0=
+			9lV5wuNS/zxE1vmyK4c4ir3m/f19RqO5uiJnrULh8AQ=
 			</data>
 		</dict>
 		<key>www/cordova-js-src/exec.js</key>
@@ -2947,11 +2951,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			k9WsUANdOTP8wvR0VSLWKu97SSQ=
+			SyUZ8uIbu4ugdCPq7QtHFxEN8bM=
 			</data>
 			<key>hash2</key>
 			<data>
-			6Je1aFG9b72VxvMDdzbrSD8wqrhw8j1Vj4jzLWOIwHY=
+			dT2C4YeZ/Pu+aXZ9352CzPjvreMPSFA+vVxdh2T1Q50=
 			</data>
 		</dict>
 		<key>www/css/images/ajax-loader.gif</key>
@@ -3365,11 +3369,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1rt3c/pfGyb//GYF1xuKxzqqX+E=
+			hbJB3yWhD+AVVg/hq+VyfRskTR0=
 			</data>
 			<key>hash2</key>
 			<data>
-			qN4UWTCvaSpSUQin1vJKmnxCBS/pLWK2HebT5tHplhc=
+			az5Dc7zqWrUdhed1jxRhgERFVVj4Hlt+NQOY7EqyvtI=
 			</data>
 		</dict>
 		<key>www/js/_notes/dwsync.xml</key>
@@ -3480,6 +3484,17 @@
 			<key>hash2</key>
 			<data>
 			TfyA4bszrILFl6ebKNHdt+gRQazwC+q/nrgJMEbnVrA=
+			</data>
+		</dict>
+		<key>www/plugins/cordova-plugin-statusbar/www/statusbar.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hDT++3ZaOTp3t16AAFAibxtovj0=
+			</data>
+			<key>hash2</key>
+			<data>
+			JVFddhH/G0jM/7U0DOdpW1CvUNswIGcQB9WylyRtCBM=
 			</data>
 		</dict>
 		<key>www/reset.php</key>

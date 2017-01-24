@@ -49,6 +49,7 @@
 		EAC58C2080AD48F08BC281A5 /* MyPluginLayerDebugView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D335D2E6AD4C71862345A9 /* MyPluginLayerDebugView.m */; };
 		FC8C1CA4E3F843B3A83EEFC4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6C171D084E44A1BD78D8BA /* SystemConfiguration.framework */; };
 		FC8F13B3E74045BD8AB0F0A8 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 538A0FFB647440849060C571 /* NSData+Base64.m */; };
+		857D4930CF7E445897DF5C40 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FD1DA17EA24F2AA8BB387D /* CDVStatusBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +148,8 @@
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "VAWE-App/config.xml"; sourceTree = "<group>"; };
 		FC91B1EA271341C2BFDA2F61 /* CoreText.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		FF3C48D55AEE420DBF9B308A /* Circle.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = Circle.m; path = "cordova-plugin-googlemaps/Circle.m"; sourceTree = "<group>"; };
+		90FD1DA17EA24F2AA8BB387D /* CDVStatusBar.m */ = {isa = PBXFileReference; name = "CDVStatusBar.m"; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		EDCD6D6F9C0A413FABA3C082 /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,6 +326,8 @@
 				37A0B0B634544F929648C2F3 /* MyReachability.h */,
 				351FAC3FC4DE4E34AD4AEFA0 /* MyPluginLayerDebugView.h */,
 				EDE446FA3167479FAAC391C3 /* MyPluginScrollView.h */,
+				90FD1DA17EA24F2AA8BB387D /* CDVStatusBar.m */,
+				EDCD6D6F9C0A413FABA3C082 /* CDVStatusBar.h */,
 			);
 			name = Plugins;
 			path = "VAWE-App/Plugins";
@@ -464,6 +469,7 @@
 				B17C4F04B3D447B6B7415341 /* MyReachability.m in Sources */,
 				EAC58C2080AD48F08BC281A5 /* MyPluginLayerDebugView.m in Sources */,
 				D4993C82BC3E441DBF614D07 /* MyPluginScrollView.m in Sources */,
+				857D4930CF7E445897DF5C40 /* CDVStatusBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
