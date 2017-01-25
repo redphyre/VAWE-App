@@ -50,6 +50,11 @@
 		FC8C1CA4E3F843B3A83EEFC4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6C171D084E44A1BD78D8BA /* SystemConfiguration.framework */; };
 		FC8F13B3E74045BD8AB0F0A8 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 538A0FFB647440849060C571 /* NSData+Base64.m */; };
 		857D4930CF7E445897DF5C40 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FD1DA17EA24F2AA8BB387D /* CDVStatusBar.m */; };
+		53CFD877E0F8420EA9EC83A4 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3104415023654A9B891011BE /* KeychainWrapper.m */; };
+		8D59B02478014C6B9C39E9FE /* TouchID.m in Sources */ = {isa = PBXBuildFile; fileRef = 8162DD5D3BC448A5AEAC7D77 /* TouchID.m */; };
+		C27FEF61E500417B9DD2EDD9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7124C44209064AEAA9A45CDC /* Security.framework */; };
+		E0E560C0BB6F423DAF8C273F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 243793529765445E88FFC3EF /* Foundation.framework */; };
+		D471DF7352C649B9AF6AB4DC /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818B39AC9E4A42B488B42294 /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +155,13 @@
 		FF3C48D55AEE420DBF9B308A /* Circle.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = Circle.m; path = "cordova-plugin-googlemaps/Circle.m"; sourceTree = "<group>"; };
 		90FD1DA17EA24F2AA8BB387D /* CDVStatusBar.m */ = {isa = PBXFileReference; name = "CDVStatusBar.m"; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		EDCD6D6F9C0A413FABA3C082 /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3104415023654A9B891011BE /* KeychainWrapper.m */ = {isa = PBXFileReference; name = "KeychainWrapper.m"; path = "cordova-plugin-keychain-touch-id/KeychainWrapper.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		8162DD5D3BC448A5AEAC7D77 /* TouchID.m */ = {isa = PBXFileReference; name = "TouchID.m"; path = "cordova-plugin-keychain-touch-id/TouchID.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		D84DF23845C84203B515C8C0 /* KeychainWrapper.h */ = {isa = PBXFileReference; name = "KeychainWrapper.h"; path = "cordova-plugin-keychain-touch-id/KeychainWrapper.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5C3C6A8CD13A412797F48234 /* TouchID.h */ = {isa = PBXFileReference; name = "TouchID.h"; path = "cordova-plugin-keychain-touch-id/TouchID.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7124C44209064AEAA9A45CDC /* Security.framework */ = {isa = PBXFileReference; name = "Security.framework"; path = "System/Library/Frameworks/Security.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		243793529765445E88FFC3EF /* Foundation.framework */ = {isa = PBXFileReference; name = "Foundation.framework"; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		818B39AC9E4A42B488B42294 /* LocalAuthentication.framework */ = {isa = PBXFileReference; name = "LocalAuthentication.framework"; path = "System/Library/Frameworks/LocalAuthentication.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +185,9 @@
 				948B183CD3A64C918AB851EB /* GoogleMapsBase.framework in Frameworks */,
 				106267EA0F6A494191B7940B /* GoogleMaps.framework in Frameworks */,
 				9B04D6A06E8E4BFF86D9D4CF /* GoogleMapsCore.framework in Frameworks */,
+				C27FEF61E500417B9DD2EDD9 /* Security.framework in Frameworks */,
+				E0E560C0BB6F423DAF8C273F /* Foundation.framework in Frameworks */,
+				D471DF7352C649B9AF6AB4DC /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +274,9 @@
 				A3AAB5A7FC674209A0A367FB /* GoogleMapsBase.framework */,
 				3B4CFCB082EA402A809F92EF /* GoogleMaps.framework */,
 				EEE351A201BD40EE9D995CC8 /* GoogleMapsCore.framework */,
+				7124C44209064AEAA9A45CDC /* Security.framework */,
+				243793529765445E88FFC3EF /* Foundation.framework */,
+				818B39AC9E4A42B488B42294 /* LocalAuthentication.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -328,6 +346,10 @@
 				EDE446FA3167479FAAC391C3 /* MyPluginScrollView.h */,
 				90FD1DA17EA24F2AA8BB387D /* CDVStatusBar.m */,
 				EDCD6D6F9C0A413FABA3C082 /* CDVStatusBar.h */,
+				3104415023654A9B891011BE /* KeychainWrapper.m */,
+				8162DD5D3BC448A5AEAC7D77 /* TouchID.m */,
+				D84DF23845C84203B515C8C0 /* KeychainWrapper.h */,
+				5C3C6A8CD13A412797F48234 /* TouchID.h */,
 			);
 			name = Plugins;
 			path = "VAWE-App/Plugins";
@@ -470,6 +492,8 @@
 				EAC58C2080AD48F08BC281A5 /* MyPluginLayerDebugView.m in Sources */,
 				D4993C82BC3E441DBF614D07 /* MyPluginScrollView.m in Sources */,
 				857D4930CF7E445897DF5C40 /* CDVStatusBar.m in Sources */,
+				53CFD877E0F8420EA9EC83A4 /* KeychainWrapper.m in Sources */,
+				8D59B02478014C6B9C39E9FE /* TouchID.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -106,7 +106,7 @@
 
 			marker = new google.maps.Marker({
 				map: map,
-				draggable: true,
+				draggable: false,
 				animation: google.maps.Animation.DROP,
 				position: {lat: 45.640301, lng: -91.577599},
 				title: 'My Event'
@@ -246,6 +246,7 @@
 			<input type="button" id="login-submit" value="Login"/>
 			<h6><a href="reset.html">Forgot password? Click here to reset.</a></h6>
 		</form>
+		<button onClick="touchID()" style="background-image:url('img/touchid-100x100.png'); width:50px!important; background-size: 50px 50px; height:50px!important; padding:2px;"></button>
 		<br/>
 		<a href="#" class="ui-btn ui-btn-b">Join VAWE</a>
 	</div>
@@ -269,6 +270,23 @@
 	</div>
 </body>
 	<script type="text/javascript">
+		function touchID() {
+			if (window.plugins) {
+				window.plugins.touchid.isAvailable(function() {
+					window.plugins.touchid.has("MyKey", function() {
+						alert("Touch ID avaialble and Password key available");
+					}, function() {
+						if (window.plugins) {
+							window.plugins.touchid.verify("MyKey", "My Message", function(password) {
+								alert("Tocuh " + password);
+							});
+						}
+					});
+				}, function(msg) {
+					alert("no Touch ID available");
+				});
+			}
+		}
 		function loginCheck() {
 			$.ajax({
 				url: "login.php",

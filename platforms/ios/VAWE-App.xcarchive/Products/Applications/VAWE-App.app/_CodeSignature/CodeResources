@@ -86,7 +86,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		pCUDpezdkOKoeBFG3FF772vXSu4=
+		pYMrOpCwzkDbM3Lu9XfIbPPIQjs=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		Lvyrkf0CjSoGFjff+Op3yynmPCo=
+		L9j/ZwSD23Do9DLMJSh0nZVi14Y=
 		</data>
 		<key>GoogleMaps.bundle/GMSCacheStorage.momd/Storage.mom</key>
 		<data>
@@ -837,7 +837,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		twM/FkP9kdkcRq7Rt0lKOa55fVk=
+		Fq0iOpB5mqhlisQoqUlGQFypYs4=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -849,7 +849,7 @@
 		</data>
 		<key>config.xml</key>
 		<data>
-		lqwuMWthTXF9MtG8PZl45/tVlho=
+		Wq5U1cSCnA1uUxn5eOWwER0ovDU=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -857,7 +857,7 @@
 		</data>
 		<key>www/_notes/dwsync.xml</key>
 		<data>
-		WzkdrGsrm/1YGbS6FiAyhHbfNBw=
+		rxqNczL9bYTRibOJ6xUCtvjWZZA=
 		</data>
 		<key>www/cordova-js-src/exec.js</key>
 		<data>
@@ -873,7 +873,7 @@
 		</data>
 		<key>www/cordova_plugins.js</key>
 		<data>
-		SyUZ8uIbu4ugdCPq7QtHFxEN8bM=
+		zP5S7Ls34xVO9n02ycNmC50HGds=
 		</data>
 		<key>www/css/images/ajax-loader.gif</key>
 		<data>
@@ -951,6 +951,10 @@
 		<data>
 		7ZaL3tNXVzMJOJ7Giy3nsw5ALQ4=
 		</data>
+		<key>www/img/Touch_ID-256.png</key>
+		<data>
+		SiWcQhrt5TCeA6GFg9TZP/w15E0=
+		</data>
 		<key>www/img/VAWE Sign UpArtboard 2.png</key>
 		<data>
 		DGdzLDGaZ/sRbtIJsHBzJb5OLuo=
@@ -989,7 +993,7 @@
 		</data>
 		<key>www/img/_notes/dwsync.xml</key>
 		<data>
-		jXuqWLKM6e5fVrlUmezaNEW/Maw=
+		PFPyW8N7Y5Jh8MH+USGTuRudCc4=
 		</data>
 		<key>www/img/facebook-icon.png</key>
 		<data>
@@ -1025,7 +1029,7 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		hbJB3yWhD+AVVg/hq+VyfRskTR0=
+		MFgIeQezZKeEaL7EObCG84cyAOQ=
 		</data>
 		<key>www/js/_notes/dwsync.xml</key>
 		<data>
@@ -1066,6 +1070,10 @@
 		<key>www/plugins/cordova-plugin-googlemaps/www/googlemaps-cdv-plugin.js</key>
 		<data>
 		VqO9YK8S/GeKD9GzGOD2HaN1gfo=
+		</data>
+		<key>www/plugins/cordova-plugin-keychain-touch-id/www/touchid.js</key>
+		<data>
+		mWtMUNKen6KjWnyRL2CD4Bf38m0=
 		</data>
 		<key>www/plugins/cordova-plugin-statusbar/www/statusbar.js</key>
 		<data>
@@ -1314,11 +1322,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pCUDpezdkOKoeBFG3FF772vXSu4=
+			pYMrOpCwzkDbM3Lu9XfIbPPIQjs=
 			</data>
 			<key>hash2</key>
 			<data>
-			IqEvHmf8cSnTRO4bvQsnIDiV/7/R2A3o30Gf5X+v1nc=
+			wvxFdWkBjC7WDyxJUmlBhTfo+1u1xcyfHU3pl2450H8=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -1336,11 +1344,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Lvyrkf0CjSoGFjff+Op3yynmPCo=
+			L9j/ZwSD23Do9DLMJSh0nZVi14Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			3WFupAgAdS6zO1cMgEbbXS99i9yKgVqaTgzUIo1AvWo=
+			Hi3TPBW8ait8NN+m9zbI4yHBjUWj8hZfYrqNhV0At9M=
 			</data>
 		</dict>
 		<key>GoogleMaps.bundle/GMSCacheStorage.momd/Storage.mom</key>
@@ -2863,11 +2871,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			twM/FkP9kdkcRq7Rt0lKOa55fVk=
+			Fq0iOpB5mqhlisQoqUlGQFypYs4=
 			</data>
 			<key>hash2</key>
 			<data>
-			uK/EByKwvol7Us8tjz4S9mxz0VDJsY8kridYpJz+UL0=
+			dtOPlOvxML8JkllhMm1SYU2Z9GXQdGaXN6ANTZYZER0=
 			</data>
 		</dict>
 		<key>archived-expanded-entitlements.xcent</key>
@@ -2885,11 +2893,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lqwuMWthTXF9MtG8PZl45/tVlho=
+			Wq5U1cSCnA1uUxn5eOWwER0ovDU=
 			</data>
 			<key>hash2</key>
 			<data>
-			5MvZonYlY6MyE8+D3HCZEU7yZ61+1J4rMhr4Zb2fUh4=
+			PFnWGPr4hp5XgsGbR1WGLRdooTrOPTOFcaXtEllMqL0=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>
@@ -2907,11 +2915,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WzkdrGsrm/1YGbS6FiAyhHbfNBw=
+			rxqNczL9bYTRibOJ6xUCtvjWZZA=
 			</data>
 			<key>hash2</key>
 			<data>
-			9lV5wuNS/zxE1vmyK4c4ir3m/f19RqO5uiJnrULh8AQ=
+			CBo50uroxJsRwOLvf5E/Ipsa3Nj0VOyqp0qGUw4k85I=
 			</data>
 		</dict>
 		<key>www/cordova-js-src/exec.js</key>
@@ -2951,11 +2959,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SyUZ8uIbu4ugdCPq7QtHFxEN8bM=
+			zP5S7Ls34xVO9n02ycNmC50HGds=
 			</data>
 			<key>hash2</key>
 			<data>
-			dT2C4YeZ/Pu+aXZ9352CzPjvreMPSFA+vVxdh2T1Q50=
+			qKGikOS/KoECqaftYuZIE73LC5v09kIkVl32+lTzSz0=
 			</data>
 		</dict>
 		<key>www/css/images/ajax-loader.gif</key>
@@ -3167,6 +3175,17 @@
 			eyk1pCKwKzwTMrfhDEbog7UmdB2FoMwm/etNjku4NP0=
 			</data>
 		</dict>
+		<key>www/img/Touch_ID-256.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SiWcQhrt5TCeA6GFg9TZP/w15E0=
+			</data>
+			<key>hash2</key>
+			<data>
+			vo0BlqAL+BNPv9Mb1Wumk+G2kyEdi3KoHVbgrDniWm8=
+			</data>
+		</dict>
 		<key>www/img/VAWE Sign UpArtboard 2.png</key>
 		<dict>
 			<key>hash</key>
@@ -3270,11 +3289,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jXuqWLKM6e5fVrlUmezaNEW/Maw=
+			PFPyW8N7Y5Jh8MH+USGTuRudCc4=
 			</data>
 			<key>hash2</key>
 			<data>
-			mvLMFAfYIV2PKhRPkHkd8WWmDsUn+U5GjrHoPxqPTXo=
+			Mr0Jzph9cijyJrJu1yj4ElHkztL10OoiWobBDY/psEs=
 			</data>
 		</dict>
 		<key>www/img/facebook-icon.png</key>
@@ -3369,11 +3388,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hbJB3yWhD+AVVg/hq+VyfRskTR0=
+			MFgIeQezZKeEaL7EObCG84cyAOQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			az5Dc7zqWrUdhed1jxRhgERFVVj4Hlt+NQOY7EqyvtI=
+			aGLhWQ+pDgHVSfErlaxIbnSuuK1mGgo6gaFL7Wp5+eA=
 			</data>
 		</dict>
 		<key>www/js/_notes/dwsync.xml</key>
@@ -3484,6 +3503,17 @@
 			<key>hash2</key>
 			<data>
 			TfyA4bszrILFl6ebKNHdt+gRQazwC+q/nrgJMEbnVrA=
+			</data>
+		</dict>
+		<key>www/plugins/cordova-plugin-keychain-touch-id/www/touchid.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mWtMUNKen6KjWnyRL2CD4Bf38m0=
+			</data>
+			<key>hash2</key>
+			<data>
+			R3SZWTLYT9RF/U6IaEaC4BQhj13BBiMgM+f04F91Q4M=
 			</data>
 		</dict>
 		<key>www/plugins/cordova-plugin-statusbar/www/statusbar.js</key>

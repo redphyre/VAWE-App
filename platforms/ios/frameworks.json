@@ -10,5 +10,8 @@
     "OpenGLES.framework": 1,
     "QuartzCore.framework": 1,
     "SystemConfiguration.framework": 1,
-    "UIKit.framework": 1
+    "UIKit.framework": 1,
+    "Security.framework": 1,
+    "Foundation.framework": 1,
+    "LocalAuthentication.framework": 1
 }

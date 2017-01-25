@@ -18,6 +18,9 @@
         },
         "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "com.inovatemarketing.vawe"
+        },
+        "cordova-plugin-keychain-touch-id": {
+            "PACKAGE_NAME": "com.inovatemarketing.vawe"
         }
     },
     "dependent_plugins": {
