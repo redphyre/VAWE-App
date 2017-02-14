@@ -38,6 +38,19 @@
 		width:95%!important;
 		
 	}
+	.clientMessage {
+		background-color:#177AD0;
+		color:white;
+		position:absolute;
+		width:40%;
+		height:inherit;
+		padding:15px;
+		bottom:65px;
+		left:10px;
+		border-bottom-right-radius: 25px;
+		border-top-left-radius: 25px;
+		border-top-right-radius: 25px;
+	}
 </style>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -165,6 +178,20 @@
 			}
 		 })
 	}
+	function sendMessage() {
+		$.ajax({
+			type: "POST",
+			url: "https://wii.elementmedia.design/vawe-app/www/sendmessage.php",
+			data: "user="+window.user+"&vendor="+window.vendor+"&message="+$("messageToSend"),
+			cache: false,
+			success: function(data)
+			{
+				if (data = "Success") {
+					$("#messageBox").append("<div class='clientMessage'>"+$("#messageToSend").val()+"</div>");
+				}
+			}
+		});
+	}
     </script>
     
 </head>
@@ -245,9 +272,9 @@
 		<h3>Send a Message</h3>
 	</div>
 	<div data-role="main" class="ui-content">
-		
+		<div id="messageBox"></div>
 	</div>
-	<div data-role="footer" class="ui-footer" data-position="fixed"><div class="messageInputContainer"><input class="messageInput" type="text" id="messageToSend" name="messageToSend" placeholder="Type your message..."></div><a href="#" style="position:absolute; right:10px; bottom:5px;" onClick="sendMessage(window.vendor)">Send</a></div>
+	<div data-role="footer" class="ui-footer" data-position="fixed"><div class="messageInputContainer"><form id="messageForm"><input class="messageInput" type="text" id="messageToSend" name="messageToSend" placeholder="Type your message..."></form></div><a href="#" style="position:absolute; right:10px; bottom:5px;" onClick="sendMessage()">Send</a></div>
 </div>
 <div id="login-page" data-role="dialog" class="ui-overlay-shadow" data-transition="flip">
 	<div data-role="header" class="ui-header ui-bar-b">
@@ -284,9 +311,6 @@
 	</div>
 </body>
 	<script type="text/javascript">
-		function sendMessage(vendor) {
-			
-		}
 		function touchID() {
 			if (window.plugins) {
 				window.plugins.touchid.isAvailable(function() {
@@ -334,6 +358,7 @@
 				{
 					if (data == "1") {
 						window.login = "true";
+						window.user = $("#user").val();
 						$( ":mobile-pagecontainer" ).pagecontainer( "change", "#page1", { transition: "flip" });
 					}
 					else {
