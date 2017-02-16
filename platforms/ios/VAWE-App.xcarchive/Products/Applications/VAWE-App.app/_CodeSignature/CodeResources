@@ -86,7 +86,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		pYMrOpCwzkDbM3Lu9XfIbPPIQjs=
+		xL1rT5OH7pxSvmmQbBsZK1JoPx4=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		L9j/ZwSD23Do9DLMJSh0nZVi14Y=
+		H+YcnhSyxE49j/a0Qnm9IDMENgo=
 		</data>
 		<key>GoogleMaps.bundle/GMSCacheStorage.momd/Storage.mom</key>
 		<data>
@@ -777,7 +777,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Sw02izJxyXmHkMomU4i8PMJeoIg=
+		/9wW5WBg2CYe8Ilqmlj4BuX/bUg=
 		</data>
 		<key>LaunchImage-568h@2x.png</key>
 		<data>
@@ -837,7 +837,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		Fq0iOpB5mqhlisQoqUlGQFypYs4=
+		xIQC0I7zZc8B1NUKzv1tbEhM8A4=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -853,11 +853,11 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		U3mjfFvyrlXrl7GmUdA0fHgOLlM=
+		W87acXgzZXQbmKM0ESnjLoa9oBM=
 		</data>
 		<key>www/_notes/dwsync.xml</key>
 		<data>
-		rxqNczL9bYTRibOJ6xUCtvjWZZA=
+		+Njfdx02JfFqolbZKA+BYaz9ils=
 		</data>
 		<key>www/cordova-js-src/exec.js</key>
 		<data>
@@ -993,7 +993,15 @@
 		</data>
 		<key>www/img/_notes/dwsync.xml</key>
 		<data>
-		PFPyW8N7Y5Jh8MH+USGTuRudCc4=
+		P/EyHzlxUikn6XCDYo3yB0XHstE=
+		</data>
+		<key>www/img/apple-icon.png</key>
+		<data>
+		GP7riI/4R9yDea+Ltdjg6K9bRH8=
+		</data>
+		<key>www/img/apple-icon@2x.png</key>
+		<data>
+		19XYW/Qro9fWW0y0hWd7m7LSqcs=
 		</data>
 		<key>www/img/facebook-icon.png</key>
 		<data>
@@ -1027,9 +1035,13 @@
 		<data>
 		MW0GF0+VJyF3L6n2kH6NKUswUL0=
 		</data>
+		<key>www/img/touchid-100x100.png</key>
+		<data>
+		ni/TTF+ooCYnmgB7bAesXEES/SY=
+		</data>
 		<key>www/index.html</key>
 		<data>
-		MFgIeQezZKeEaL7EObCG84cyAOQ=
+		syK25wyYhpEK2WV5g9CHbG9P71g=
 		</data>
 		<key>www/js/_notes/dwsync.xml</key>
 		<data>
@@ -1082,6 +1094,10 @@
 		<key>www/reset.php</key>
 		<data>
 		nQ8e7BzL5MfAwqmD1bPmw6JWB4U=
+		</data>
+		<key>www/sendmessage.php</key>
+		<data>
+		iaxwGOffbf9FTu+RHnzZEKqhUKs=
 		</data>
 		<key>www/vendor.html</key>
 		<data>
@@ -1322,11 +1338,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pYMrOpCwzkDbM3Lu9XfIbPPIQjs=
+			xL1rT5OH7pxSvmmQbBsZK1JoPx4=
 			</data>
 			<key>hash2</key>
 			<data>
-			wvxFdWkBjC7WDyxJUmlBhTfo+1u1xcyfHU3pl2450H8=
+			9BIIMiTedX5HNr0f0Wbb4OkWBa1xoXArmaGzq3zTRqI=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -1344,11 +1360,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			L9j/ZwSD23Do9DLMJSh0nZVi14Y=
+			H+YcnhSyxE49j/a0Qnm9IDMENgo=
 			</data>
 			<key>hash2</key>
 			<data>
-			Hi3TPBW8ait8NN+m9zbI4yHBjUWj8hZfYrqNhV0At9M=
+			hxDFKQxw0G5RNHPErALHLV9sTcGqluFjGx6sXydEOHo=
 			</data>
 		</dict>
 		<key>GoogleMaps.bundle/GMSCacheStorage.momd/Storage.mom</key>
@@ -2871,11 +2887,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Fq0iOpB5mqhlisQoqUlGQFypYs4=
+			xIQC0I7zZc8B1NUKzv1tbEhM8A4=
 			</data>
 			<key>hash2</key>
 			<data>
-			dtOPlOvxML8JkllhMm1SYU2Z9GXQdGaXN6ANTZYZER0=
+			4JwAeON59l7SyVrQYn/by6DzWf3AY2vrQJGDDzvUpyo=
 			</data>
 		</dict>
 		<key>archived-expanded-entitlements.xcent</key>
@@ -2904,22 +2920,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			U3mjfFvyrlXrl7GmUdA0fHgOLlM=
+			W87acXgzZXQbmKM0ESnjLoa9oBM=
 			</data>
 			<key>hash2</key>
 			<data>
-			aBuj3nLFTE/F8oe9RULdSyxio5kZxbYxSyVnMOcBayc=
+			jtsWWJ3ZVdEiVJgJBiCnFlZ08fiCzZ4biDBdF4bmN0I=
 			</data>
 		</dict>
 		<key>www/_notes/dwsync.xml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rxqNczL9bYTRibOJ6xUCtvjWZZA=
+			+Njfdx02JfFqolbZKA+BYaz9ils=
 			</data>
 			<key>hash2</key>
 			<data>
-			CBo50uroxJsRwOLvf5E/Ipsa3Nj0VOyqp0qGUw4k85I=
+			uvt4+Ggt0zh8YTke6gi20CLr9ANTy3ZYHEEx7Jffr28=
 			</data>
 		</dict>
 		<key>www/cordova-js-src/exec.js</key>
@@ -3289,11 +3305,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PFPyW8N7Y5Jh8MH+USGTuRudCc4=
+			P/EyHzlxUikn6XCDYo3yB0XHstE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Mr0Jzph9cijyJrJu1yj4ElHkztL10OoiWobBDY/psEs=
+			dl8MZq/zEXjnYucOP+9gOeYAqgsvxH2yUG+vv/h7vH8=
+			</data>
+		</dict>
+		<key>www/img/apple-icon.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GP7riI/4R9yDea+Ltdjg6K9bRH8=
+			</data>
+			<key>hash2</key>
+			<data>
+			CoaEy5FhkvJQzA2Xrtf6qJJaCW36n110EFXuObQQ5VQ=
+			</data>
+		</dict>
+		<key>www/img/apple-icon@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			19XYW/Qro9fWW0y0hWd7m7LSqcs=
+			</data>
+			<key>hash2</key>
+			<data>
+			pv040+mIs2LLPzynJJpA/A9v67ubb2Dvo9g7puoZGlQ=
 			</data>
 		</dict>
 		<key>www/img/facebook-icon.png</key>
@@ -3384,15 +3422,26 @@
 			8JmHrhEr2x//0WYZDQyLdQyvokuPf/rAP06Yuah4neM=
 			</data>
 		</dict>
+		<key>www/img/touchid-100x100.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ni/TTF+ooCYnmgB7bAesXEES/SY=
+			</data>
+			<key>hash2</key>
+			<data>
+			I9C/vDkYwk8oike3SXa2ie9DN/fOlts1n1FV3iA4jSA=
+			</data>
+		</dict>
 		<key>www/index.html</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MFgIeQezZKeEaL7EObCG84cyAOQ=
+			syK25wyYhpEK2WV5g9CHbG9P71g=
 			</data>
 			<key>hash2</key>
 			<data>
-			aGLhWQ+pDgHVSfErlaxIbnSuuK1mGgo6gaFL7Wp5+eA=
+			rNlhfMhf8raqHgXTHqtgXQYzhytyf2CZsgs0ERVOzvA=
 			</data>
 		</dict>
 		<key>www/js/_notes/dwsync.xml</key>
@@ -3536,6 +3585,17 @@
 			<key>hash2</key>
 			<data>
 			ctk7QdAk8ZYiJhiYAIAj6QcbXdnhxPOeB88gcEbP38k=
+			</data>
+		</dict>
+		<key>www/sendmessage.php</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iaxwGOffbf9FTu+RHnzZEKqhUKs=
+			</data>
+			<key>hash2</key>
+			<data>
+			81y6JWEK1KcdDi0jgTFzs7qjDe1q+rzgWQqtzH0cs7Q=
 			</data>
 		</dict>
 		<key>www/vendor.html</key>

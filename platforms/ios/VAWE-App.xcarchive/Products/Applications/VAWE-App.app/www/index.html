@@ -24,6 +24,46 @@
 	.google {
 		background-image:url(img/google-sign-in.png);
 	}
+	.ui-icon-myapp-settings {
+		background: url("img/apple-icon.png") 18px 18px no-repeat !important;
+	}
+	@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+		.ui-icon-myapp-settings {
+			background: url("img/apple-icon@2x.png") no-repeat rgba(0, 0, 0, 0.8) !important;
+			background-size: 18px 18px;
+		}
+		// more declarations here
+	}
+	.messageInputContainer {
+		width:75%!important;
+		
+	}
+	.clientMessage {
+		background-color:#177AD0;
+		color:white;
+		width:200px!important;
+		height:inherit;
+		padding:15px;
+		left:10px;
+		margin-bottom:15px;
+		border-bottom-right-radius: 25px;
+		border-top-left-radius: 25px;
+		border-top-right-radius: 25px;
+	}
+	.messageBox {
+		height:100%;
+		position:absolute;
+		top:90%!important;
+	}
+	.messageBody {
+		display:flex;
+		flex-direction: column-reverse;
+		position:absolute;
+		top:15px;
+		min-height:88%!important;
+		margin-bottom:15px;
+		overflow: auto;
+	}
 </style>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -147,8 +187,25 @@
 				document.getElementById("vendor-data").innerHTML = data;
 				var e = document.getElementById("vendor-message");
 				e.setAttribute("name", vendorID);
+				window.vendor = vendorID;
 			}
 		 })
+	}
+	function sendMessage() {
+		alert("test");
+		$.ajax({
+			type: "POST",
+			url: "https://wii.elementmedia.design/vawe-app/www/sendmessage.php",
+			data: "user="+window.user+"&vendor="+window.vendor+"&message="+$("messageToSend").val(),
+			cache: true,
+			success: function(data)
+			{
+				if (data = "Success") {
+					alert("test 2");
+					$("#messageBox").append("<div class='clientMessage'>"+$("#messageToSend").val()+"</div>");
+				}
+			}
+		});
 	}
     </script>
     
@@ -211,7 +268,7 @@
 	<a href="#" data-rel="back" data-icon="back" data-iconpos="left" style="margin-left:10px; margin-right:10px;" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-shadow-icon ui-corner-all">Back</a>
 	<div id="vendor-data" data-role="content">
 	</div>
-	<a href="#message-vendor" id="vendor-message" data-rel="dialog" style="margin-left:10px; margin-right:10px;" class="ui-btn ui-btn-a ui-icon-mail ui-corner-all ui-btn-icon-left" data-transition="flip">Message Vendor</a>
+	<a href="#message-vendor" id="vendor-message" style="margin-left:10px; margin-right:10px;" class="ui-btn ui-btn-a ui-icon-mail ui-corner-all ui-btn-icon-left" data-transition="flip">Message Vendor</a>
 	<div data-role="footer" data-position="fixed">
 		<div data-role="navbar" class="ui-nodisc-icon">
 			<ul>
@@ -224,16 +281,15 @@
 		</div>
 	</div>
 </div>
-<div id="message-vendor" data-role="dialog" class="ui-overlay-shadow" data-transition="flip">
+<div id="message-vendor" data-role="page" data-transition="flip">
 	<div data-role="header" class="ui-header ui-bar-b">
 		<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-shadow ui-corner-all ui-btn-left ui-icon-left ui-btn-icon-notext ui-icon-back">Close</a>
 		<h3>Send a Message</h3>
 	</div>
-	<div data-role="main" class="ui-content">
-		Test Content
-		<a href="#" class="ui-btn ui-btn-a ui-icon-arrow-r ui-icon-right">Send Message</a>
-		<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-shadow ui-icon-right ui-icon-delete">Cancel</a>
+	<div data-role="main" class="ui-content messageBody">
+		<div id="messageBox"></div>
 	</div>
+	<div data-role="footer" class="ui-footer" data-position="fixed"><div class="messageInputContainer"><form id="messageForm"><input class="messageInput" type="text" id="messageToSend" name="messageToSend" placeholder="Type your message..."></form></div><a href="#" style="position:absolute; right:10px; bottom:5px;" onClick="sendMessage()">Send</a></div>
 </div>
 <div id="login-page" data-role="dialog" class="ui-overlay-shadow" data-transition="flip">
 	<div data-role="header" class="ui-header ui-bar-b">
@@ -246,7 +302,7 @@
 			<input type="button" id="login-submit" value="Login"/>
 			<h6><a href="reset.html">Forgot password? Click here to reset.</a></h6>
 		</form>
-		<button onClick="touchID()" style="background-image:url('img/Touch_ID-256.png')!important; width:50px!important; background-size: 50px 50px; height:50px!important; padding:2px;"></button>
+		<button onClick="touchID()" style="background-image:url('img/touchid-100x100.png'); width:50px!important; background-size: 50px 50px; height:50px!important; padding:2px;"></button>
 		<br/>
 		<a href="#" class="ui-btn ui-btn-b">Join VAWE</a>
 	</div>
@@ -317,6 +373,7 @@
 				{
 					if (data == "1") {
 						window.login = "true";
+						window.user = $("#user").val();
 						$( ":mobile-pagecontainer" ).pagecontainer( "change", "#page1", { transition: "flip" });
 					}
 					else {

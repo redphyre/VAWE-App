@@ -1,19 +1,24 @@
 <?php
-$message = $_POST['messageToSend'];
-$user = $_POST['user'];
-$vendor = $_POST['vendor'];
+$message = $_GET['message'];
+$user = $_GET['user'];
+$vendor = $_GET['vendor'];
 $to_from = "to";
-header("Content-Type: text/html; charset=ISO-8859-1");
-$user = "elementm";
-$pass = "Qazplm10!";
-$dbname = "elementm_wp5";
-$query = "INSERT INTO vawe_messages (vendor, client, message, to_from) VALUES ($vendor, $user, $message, $to_from)";
-try {
-    $dbh = new PDO('mysql:host=localhost;dbname=elementm_wp5', $user, $pass);
-	$dbh -> query($query);
-	echo "Success";
-} catch (PDOException $e) {
-    print "Error!: " . $e->getMessage() . "<br/>";
-    die();
-}
+$con=mysqli_connect("localhost","elementm","Qazplm10!","elementm_wp5");
+// Check connection
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+
+// Perform queries 
+echo $user."<br>";
+echo $vendor."<br>";
+echo $message."<br>";
+
+mysqli_query($con,"INSERT INTO vawe_messages (vendor,client,message,to_from) 
+VALUES ('$vendor','$user','$message','$to_from')") or die(mysql_error());
+
+echo "Success";
+
+mysqli_close($con);
 ?>

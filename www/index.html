@@ -35,21 +35,34 @@
 		// more declarations here
 	}
 	.messageInputContainer {
-		width:95%!important;
+		width:75%!important;
 		
 	}
 	.clientMessage {
 		background-color:#177AD0;
 		color:white;
-		position:absolute;
-		width:40%;
+		width:200px!important;
 		height:inherit;
 		padding:15px;
-		bottom:65px;
 		left:10px;
+		margin-bottom:15px;
 		border-bottom-right-radius: 25px;
 		border-top-left-radius: 25px;
 		border-top-right-radius: 25px;
+	}
+	.messageBox {
+		height:100%;
+		position:absolute;
+		top:90%!important;
+	}
+	.messageBody {
+		display:flex;
+		flex-direction: column-reverse;
+		position:absolute;
+		top:15px;
+		min-height:88%!important;
+		margin-bottom:15px;
+		overflow: auto;
 	}
 </style>
 <head>
@@ -162,6 +175,11 @@
 			}
 		 });
 	})
+	$(document).on("pageinit", "#message-vendor", function() {
+		if (typeof window.user == "undefined") {
+			$( ":mobile-pagecontainer" ).pagecontainer( "change", "#login-page", { transition: "slide" });
+		}
+	})
 	function changePage(vendorID) {
 		$( ":mobile-pagecontainer" ).pagecontainer( "change", "#vendor-page", { transition: "slide" });
 		$.ajax({
@@ -180,10 +198,10 @@
 	}
 	function sendMessage() {
 		$.ajax({
-			type: "POST",
+			type: "GET",
 			url: "https://wii.elementmedia.design/vawe-app/www/sendmessage.php",
-			data: "user="+window.user+"&vendor="+window.vendor+"&message="+$("messageToSend"),
-			cache: false,
+			data: "user="+window.user+"&vendor="+window.vendor+"&message="+$("#messageToSend").val(),
+			cache: true,
 			success: function(data)
 			{
 				if (data = "Success") {
@@ -271,7 +289,7 @@
 		<a href="#" data-rel="back" class="ui-btn ui-btn-b ui-icon-shadow ui-corner-all ui-btn-left ui-icon-left ui-btn-icon-notext ui-icon-back">Close</a>
 		<h3>Send a Message</h3>
 	</div>
-	<div data-role="main" class="ui-content">
+	<div data-role="main" class="ui-content messageBody">
 		<div id="messageBox"></div>
 	</div>
 	<div data-role="footer" class="ui-footer" data-position="fixed"><div class="messageInputContainer"><form id="messageForm"><input class="messageInput" type="text" id="messageToSend" name="messageToSend" placeholder="Type your message..."></form></div><a href="#" style="position:absolute; right:10px; bottom:5px;" onClick="sendMessage()">Send</a></div>
