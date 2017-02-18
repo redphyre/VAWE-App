@@ -1,27 +1,24 @@
 <?php
-$message = $_POST['messageToSend'];
-$username = $_POST['user'];
-$vendor = $_POST['vendor'];
+$message = $_GET['message'];
+$user = $_GET['user'];
+$vendor = $_GET['vendor'];
 $to_from = "to";
-$mysqli = new mysqli("localhost", "elementm", "Qazplm10!", "elementm_wp5");
+$con=mysqli_connect("localhost","hmhpenfwaa","wuJJFZs7a7","hmhpenfwaa");
+// Check connection
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
 
-/* check connection */
-if ($mysqli->connect_errno) {
-    printf("Connect failed: %s\n", $mysqli->connect_error);
-    exit();
-}
+// Perform queries 
+echo $user."<br>";
+echo $vendor."<br>";
+echo $message."<br>";
 
-/* Create table doesn't return a resultset */
+mysqli_query($con,"INSERT INTO vawe_messages (vendor,client,message,to_from) 
+VALUES ('$vendor','$user','$message','$to_from')") or die(mysql_error());
 
-/* Select queries return a resultset */
-if ($result = $mysqli->query("INSERT INTO vawe_messages (vendor, client, message, to_from) VALUES ($vendor, $username, $message, $to_from)")) {
-    echo "Success";
+echo "Success";
 
-    /* free result set */
-    $result->close();
-}
-
-/* If we have to retrieve large amount of data we use MYSQLI_USE_RESULT */
-
-$mysqli->close();
+mysqli_close($con);
 ?>

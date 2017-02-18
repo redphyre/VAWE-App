@@ -39,6 +39,7 @@
 		
 	}
 	.clientMessage {
+		float:left;
 		background-color:#177AD0;
 		color:white;
 		width:200px!important;
@@ -47,6 +48,19 @@
 		left:10px;
 		margin-bottom:15px;
 		border-bottom-right-radius: 25px;
+		border-top-left-radius: 25px;
+		border-top-right-radius: 25px;
+	}
+	.vendorMessage {
+		float:right;
+		background-color:#1c1c1c;
+		color:black;
+		width:200px!important;
+		height:inherit;
+		padding:15px;
+		left:10px;
+		margin-bottom:15px;
+		border-bottom-left-radius: 25px;
 		border-top-left-radius: 25px;
 		border-top-right-radius: 25px;
 	}
@@ -79,6 +93,7 @@
 	 */
 		
 	var map;
+	window.user = null;
 	$( document ).on( "pageinit", "#map", function() {
 		var defaultLatLng = new google.maps.LatLng(34.0983425, -118.3267434);  // Default to Hollywood, CA when no geolocation support
 
@@ -160,12 +175,17 @@
 	});
 	</script>
 <script type="text/javascript">
+	$(document).on("pageshow", "#message-vendor", function() {
+		if (window.user == null) {
+			$( ":mobile-pagecontainer" ).pagecontainer( "change", "#login-page", { transition: "slide" });
+		}
+	})
 	var login = "false";
 	$(document).on( "pageinit", "#vendors", function() {
 		var filter = 0;
 		 $.ajax({
 			type: "POST",
-			url: "https://wii.elementmedia.design/vawe-app/www/vendorlist.php",
+			url: "http://www.weddingindustryinsider.com/www/vendorlist.php",
 			data: 'filter=' + filter,
 			cache: false,
 			success: function(data) 
@@ -175,16 +195,24 @@
 			}
 		 });
 	})
-	$(document).on("pageinit", "#message-vendor", function() {
-		if (typeof window.user == "undefined") {
-			$( ":mobile-pagecontainer" ).pagecontainer( "change", "#login-page", { transition: "slide" });
-		}
+	$(document).on( "pageinit", "#message-vendor", function() {
+		var filter = 0;
+		 $.ajax({
+			type: "POST",
+			url: "http://www.weddingindustryinsider.com/www/loadmessages.php",
+			data: 'user='+window.user+'&vendor='+window.vendor,
+			cache: false,
+			success: function(data) 
+			{
+				document.getElementById("messageBody").innerHTML = data;
+			}
+		 });
 	})
 	function changePage(vendorID) {
 		$( ":mobile-pagecontainer" ).pagecontainer( "change", "#vendor-page", { transition: "slide" });
 		$.ajax({
 			type: "POST",
-			url: "https://wii.elementmedia.design/vawe-app/www/vendorpull.php",
+			url: "http://www.weddingindustryinsider.com/www/vendorpull.php",
 			data: 'id=' + vendorID,
 			cache: false,
 			success: function(data) 
@@ -195,20 +223,6 @@
 				window.vendor = vendorID;
 			}
 		 })
-	}
-	function sendMessage() {
-		$.ajax({
-			type: "GET",
-			url: "https://wii.elementmedia.design/vawe-app/www/sendmessage.php",
-			data: "user="+window.user+"&vendor="+window.vendor+"&message="+$("#messageToSend").val(),
-			cache: true,
-			success: function(data)
-			{
-				if (data = "Success") {
-					$("#messageBox").append("<div class='clientMessage'>"+$("#messageToSend").val()+"</div>");
-				}
-			}
-		});
 	}
     </script>
     
@@ -308,6 +322,22 @@
 		<button onClick="touchID()" style="background-image:url('img/touchid-100x100.png'); width:50px!important; background-size: 50px 50px; height:50px!important; padding:2px;"></button>
 		<br/>
 		<a href="#" class="ui-btn ui-btn-b">Join VAWE</a>
+		<a href="#vendor-login" class="ui-btn ui-btn-c">Vendor Login</a>
+	</div>
+</div>
+<div id="vendor-login" data-role="dialog" class="ui-overlay-shadow" data-transition="pop">
+	<div data-role="header" class="ui-header ui-bar-c">
+		<h3>Vendor Login</h3>
+	</div>
+	<div data-role="main" class="ui-content">
+		<form id="vendor-login-form">
+			<input type="text" id="vendor-user" name="vendor-user" placeholder="Username"/>
+			<input type="password" id="vendor-pass" name="vendor-pass" placeholder="Password"/>
+			<input type="button" id="vendor-login-submit" value="Login"/>
+			<h6><a href="reset.html">Forgot password? Click here to reset.</a></h6>
+		</form>
+		<button onClick="touchID()" style="background-image:url('img/touchid-100x100.png'); width:50px!important; background-size: 50px 50px; height:50px!important; padding:2px;"></button>
+		<br/>
 	</div>
 </div>
 <div data-role="panel" id="profile" data-position="right" data-display="overlay" data-theme="a" class="ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-closed">
@@ -337,7 +367,7 @@
 					}, function() {
 						if (window.plugins) {
 							window.plugins.touchid.verify("MyKey", "My Message", function(password) {
-								alert("Tocuh " + password);
+								alert("Touch " + password);
 							});
 						}
 					});
@@ -369,7 +399,7 @@
 			e.preventDefault();
 			$.ajax({
 				type: "POST",
-				url: "https://wii.elementmedia.design/vawe-app/www/logincheck.php",
+				url: "http://www.weddingindustryinsider.com/www/logincheck.php",
 				data: $("#login-form").serialize(),
 				cache: false,
 				success: function(data)
@@ -385,5 +415,52 @@
 				}
 			});
 		});
+		$("#vendor-login-submit").click(function(){
+			$("#vendor-login-form").trigger("submit");
+		});
+		$("#vendor-login-form").submit(function(e){
+			e.preventDefault();
+			$.ajax({
+				type: "POST",
+				url: "http://www.weddingindustryinsider.com/www/vendorlogin.php",
+				data: $("#vendor-login-form").serialize(),
+				cache: false,
+				error: function(jqXHR, textStatus, data) {
+					alert(textStatus);
+				},
+				success: function(data)
+				{
+					alert(data);
+					if (data == "YES") {
+						window.login = "true";
+						window.user = $("#user").val();
+						window.vendor = "true";
+						$( ":mobile-pagecontainer" ).pagecontainer( "change", "#page1", { transition: "flip" });
+					}
+					else if (data == "NO") {
+						alert("Username is not listed as a vendor. Please check with account administrator.");
+					}
+					else if (data == "FAIL") {
+						alert("Username or password incorrect. Please try again.");
+					}
+				}
+			});
+		});
+		function sendMessage() {
+			alert("function working");
+			$.ajax({
+				type: "GET",
+				url: "http://www.weddingindustryinsider.com/www/sendmessage.php",
+				data: "user="+window.user+"&vendor="+window.vendor+"&message="+$("#messageToSend").val(),
+				cache: true,
+				success: function(data)
+				{
+					if (data = "Success") {
+						alert("success");
+						$("#messageBox").append("<div class='clientMessage'>"+$("#messageToSend").val()+"</div>");
+					}
+				}
+			});
+		}
 </script>
 </html>

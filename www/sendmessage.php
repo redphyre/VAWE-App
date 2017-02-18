@@ -1,9 +1,12 @@
 <?php
+header("Content-Type: text/html; charset=ISO-8859-1");
+header('Access-Control-Allow-Origin: *'); 
+
 $message = $_GET['message'];
 $user = $_GET['user'];
 $vendor = $_GET['vendor'];
 $to_from = "to";
-$con=mysqli_connect("localhost","elementm","Qazplm10!","elementm_wp5");
+$con=mysqli_connect("localhost","hmhpenfwaa","wuJJFZs7a7","hmhpenfwaa");
 // Check connection
 if (mysqli_connect_errno())
   {

@@ -1,9 +1,12 @@
 <?php
 
-include_once('../../wp-config.php');
-include_once('../../wp-load.php');
-include_once('../../wp-includes/wp-db.php');
-include_once('../../wp-includes/class-phpass.php');
+header('content-type: application/json; charset=utf-8');
+header("access-control-allow-origin: *");
+
+include_once('../wp-config.php');
+include_once('../wp-load.php');
+include_once('../wp-includes/wp-db.php');
+include_once('../wp-includes/class-phpass.php');
 
 global $userdata;
 global $wpdb; 
