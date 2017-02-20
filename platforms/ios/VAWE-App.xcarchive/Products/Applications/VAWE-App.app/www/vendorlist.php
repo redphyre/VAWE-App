@@ -1,6 +1,7 @@
 <?php
-header('content-type: application/json; charset=utf-8');
-header("access-control-allow-origin: *");
+header("Content-Type: text/html; charset=ISO-8859-1");
+header('Access-Control-Allow-Origin: *'); 
+
 $user = "hmhpenfwaa";
 $pass = "wuJJFZs7a7";
 $dbname = "hmhpenfwaa";
@@ -8,12 +9,13 @@ $query = "SELECT wp_sabai_content_post.post_id,wp_sabai_content_post.post_title,
 try {
     $dbh = new PDO('mysql:host=localhost;dbname=hmhpenfwaa', $user, $pass);
     foreach($dbh->query($query) as $row) {
-		echo "<li><a onClick='changePage(" . $row[0] . ")'><h4>" . $row[1] . "</h4>";
+		$return = "<li><a onClick='changePage(" . $row[0] . ")'><h4>" . $row[1] . "</h4>";
 		$query2 = "SELECT wp_sabai_taxonomy_term.term_title FROM wp_sabai_entity_field_directory_category INNER JOIN wp_sabai_taxonomy_term ON wp_sabai_entity_field_directory_category.value=wp_sabai_taxonomy_term.term_id WHERE wp_sabai_entity_field_directory_category.entity_id = '$row[0]'";
 		foreach($dbh->query($query2) as $row2) {
-			print "<p>" . $row2[0] . "</p>";
+			$return = $return . "<p>" . $row2[0] . "</p>";
 		}
-		echo "</a></li>";
+		$return = $return . "</a></li>";
+		echo $return;
     }
     $dbh = null;
 } catch (PDOException $e) {

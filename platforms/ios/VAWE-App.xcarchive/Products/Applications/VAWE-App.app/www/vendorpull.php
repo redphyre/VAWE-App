@@ -1,6 +1,7 @@
 <?php
-header('content-type: application/json; charset=utf-8');
-header("access-control-allow-origin: *");
+header('Content-Type: text/html; charset=ISO-8859-1');
+header('Access-Control-Allow-Origin: *'); 
+
 $user = "hmhpenfwaa";
 $pass = "wuJJFZs7a7";
 $dbname = "hmhpenfwaa";

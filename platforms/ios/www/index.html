@@ -39,6 +39,7 @@
 		
 	}
 	.clientMessage {
+		float:left;
 		background-color:#177AD0;
 		color:white;
 		width:200px!important;
@@ -47,6 +48,19 @@
 		left:10px;
 		margin-bottom:15px;
 		border-bottom-right-radius: 25px;
+		border-top-left-radius: 25px;
+		border-top-right-radius: 25px;
+	}
+	.vendorMessage {
+		float:right;
+		background-color:#1c1c1c;
+		color:black;
+		width:200px!important;
+		height:inherit;
+		padding:15px;
+		left:10px;
+		margin-bottom:15px;
+		border-bottom-left-radius: 25px;
 		border-top-left-radius: 25px;
 		border-top-right-radius: 25px;
 	}
@@ -64,10 +78,14 @@
 		margin-bottom:15px;
 		overflow: auto;
 	}
+	.mySlides {
+		width:100%!important;
+	}
 </style>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
 <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
 <script type="text/javascript" src="cordova.js"></script>
@@ -166,6 +184,7 @@
 			$( ":mobile-pagecontainer" ).pagecontainer( "change", "#login-page", { transition: "slide" });
 		}
 	})
+	var slideIndex = 0;
 	var login = "false";
 	$(document).on( "pageinit", "#vendors", function() {
 		var filter = 0;
@@ -176,11 +195,37 @@
 			cache: false,
 			success: function(data) 
 			{
-				alert("success");
 				document.getElementById("results").innerHTML = data;
 				$("#results").listview("refresh");
 			}
 		 });
+	})
+	$(document).on( "pageinit", "#message-vendor", function() {
+		 $.ajax({
+			type: "POST",
+			url: "http://www.weddingindustryinsider.com/www/loadmessages.php",
+			data: 'user='+window.user+'&vendor='+window.vendor,
+			cache: false,
+			success: function(data) 
+			{
+				document.getElementById("messageBody").innerHTML = data;
+			}
+		 });
+	})
+	$(document).on( "pagecreate", "#page1", function(e) {
+		e.preventDefault();
+		carousel();
+		$(".mySlides").on("swipeleft", function() {
+			$(".mySlides").removeClass("w3-animate-left");
+			$(".mySlides").addClass("w3-animate-right");
+			plusDivs(1);
+		});
+
+		$(".mySlides").on("swiperight", function() {
+			$(".mySlides").removeClass("w3-animate-right");
+			$(".mySlides").addClass("w3-animate-left");
+			plusDivs(-1);
+		});
 	})
 	function changePage(vendorID) {
 		$( ":mobile-pagecontainer" ).pagecontainer( "change", "#vendor-page", { transition: "slide" });
@@ -198,6 +243,54 @@
 			}
 		 })
 	}
+	
+	function resetCarouselAnimation() {
+		$(".mySlides").removeClass("w3-animate-left");
+		$(".mySlides").addClass("w3-animate-right");
+	}
+	
+	function carousel() {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("demo");
+		for (i = 0; i < x.length; i++) {
+		  x[i].style.display = "none"; 
+		}
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" w3-pink", "");
+		}
+		slideIndex++;
+		if (slideIndex > x.length) {slideIndex = 1} 
+		x[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " w3-pink";
+		setTimeout(resetCarouselAnimation, 7000);
+		setTimeout(carousel, 7000); // Change image every 2 seconds
+	}
+	
+	function plusDivs(n) {
+		showDivs(slideIndex += n);
+	}
+	
+	function currentDiv(n) {
+	  	showDivs(slideIndex = n);
+	}
+	
+	function showDivs(n) {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("demo");
+		if (n > x.length) {slideIndex = 1}    
+		if (n < 1) {slideIndex = x.length}
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		}
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" w3-pink", "");
+		}
+		x[slideIndex-1].style.display = "block";  
+		dots[slideIndex-1].className += " w3-pink";
+	}
+
     </script>
     
 </head>
@@ -205,7 +298,27 @@
 <div id="page1" data-role="page">
 	<div data-role="header" data-position="fixed" align="center"><img src="img/VAWE-long-300x30-transparent.png" width="300" height="30" alt=""/></div>
 	<div data-role="content" style="margin:0; padding:0;">
-		Main Content
+		<div id="carouselfContainer" class="w3-content w3-display-container" style="padding-top:5px; padding-bottom:5px;">
+			<img class="mySlides w3-animate-right" src="img/CATERING (1).png">
+			<img class="mySlides w3-animate-right" src="img/Rev. Pamela A. Mann.png">
+			<img class="mySlides w3-animate-right" src="img/CATERING.png">
+			<div class="w3-center w3-section w3-large w3-text-pink w3-display-bottommiddle" style="width:100%">
+			    <div class="w3-left w3-padding-left w3-hover-text-lime" onclick="plusDivs(-1)">&#10094;</div>
+   				<div class="w3-right w3-padding-right w3-hover-text-lime" onclick="plusDivs(1)">&#10095;</div>
+				<span class="w3-badge demo w3-border w3-border-black w3-lime" onclick="currentDiv(1)" style="height:15px;"></span>
+				<span class="w3-badge demo w3-border w3-border-black w3-lime" onclick="currentDiv(2)" style="height:15px;"></span>
+				<span class="w3-badge demo w3-border w3-border-black w3-lime" onclick="currentDiv(3)" style="height:15px;"></span>
+			</div>
+		</div>
+		<div style="padding-bottom:5px;">
+			<img src="img/Wedding in a Box.png" style="width:100%!important;">
+		</div>
+		<div style="padding-bottom:5px;">
+			<img src="img/Flutter My Shutter.png" style="width:100%!important;">
+		</div>
+		<div style="padding-bottom:5px;">
+			<img src="img/Brock's riverside.png" style="width:100%!important;">
+		</div>
 	</div>
 	<div data-role="footer" data-position="fixed">
 		<div data-role="navbar" class="ui-nodisc-icon">
@@ -399,8 +512,12 @@
 				url: "http://www.weddingindustryinsider.com/www/vendorlogin.php",
 				data: $("#vendor-login-form").serialize(),
 				cache: false,
+				error: function(jqXHR, textStatus, data) {
+					alert(textStatus);
+				},
 				success: function(data)
 				{
+					alert(data);
 					if (data == "YES") {
 						window.login = "true";
 						window.user = $("#user").val();
@@ -410,7 +527,7 @@
 					else if (data == "NO") {
 						alert("Username is not listed as a vendor. Please check with account administrator.");
 					}
-					else {
+					else if (data == "FAIL") {
 						alert("Username or password incorrect. Please try again.");
 					}
 				}

@@ -14,9 +14,7 @@
         },
         "is_top_level": true,
         "variables": {
-            "API_KEY_FOR_IOS": "AIzaSyDfYHAzjn7XKBSpMVTfhWW-piZT2ZkJAac",
-            "NSLOCATIONWHENINUSEUSAGEDESCRIPTION": "Show your location on the map",
-            "NSLOCATIONALWAYSUSAGEDESCRIPTION": "Trace your location on the map"
+            "API_KEY_FOR_ANDROID": "AIzaSyBWgmU0bIlIS3jtypH12jk3t7iLti1HQgo"
         }
     },
     "com.googlemaps.ios": {

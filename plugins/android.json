@@ -1,0 +1,29 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-googlemaps": {
+            "API_KEY_FOR_ANDROID": "AIzaSyBWgmU0bIlIS3jtypH12jk3t7iLti1HQgo",
+            "PACKAGE_NAME": "com.inovatemarketing.vawe"
+        },
+        "cordova-plugin-keychain-touch-id": {
+            "PACKAGE_NAME": "com.inovatemarketing.vawe"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.inovatemarketing.vawe"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.inovatemarketing.vawe"
+        }
+    },
+    "dependent_plugins": {
+        "com.googlemaps.ios": {
+            "PACKAGE_NAME": "com.inovatemarketing.vawe"
+        }
+    }
+}

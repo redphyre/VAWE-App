@@ -1,7 +1,7 @@
 <?php
 
-header('content-type: application/json; charset=utf-8');
-header("access-control-allow-origin: *");
+header('content-type: text/html; charset=utf-8');
+header('Access-Control-Allow-Origin: *'); 
 
 include_once('../wp-config.php');
 include_once('../wp-load.php');
@@ -13,8 +13,8 @@ global $wpdb;
 
 //get the posted values
 
-$posted_username = $_POST['user'];
-$posted_password = $_POST['pass'];
+$posted_username = $_POST['vendor-user'];
+$posted_password = $_POST['vendor-pass'];
 
 $user_name = htmlspecialchars($posted_username,ENT_QUOTES);
 
@@ -33,12 +33,14 @@ $vendor = $userinfo->vendor_status;
 $hash = $userinfo->user_pass;
 $wp_hasher = new PasswordHash(8, TRUE);
 $check = $wp_hasher->CheckPassword($posted_password, $hash);
-if ($vendor == "YES") {
+if ($vendor == "YES" && $check == "1") {
 	session_start();
 	$_SESSION['login'] = "1";
 	$_SESSION['user'] = $user_name; 
 	$_SESSION['vendor'] = "true";
-	echo $vendor;
+	echo "YES";
 }
-else { echo "Username is not listed as a vendor or password is incorrect. Please try again."; }
+else if ($vendor == "NO" && $check == "!") { echo "NO"; }
+else if ($vendor == "YES" && $check != "1") { echo "FAIL"; }
+else { echo "FAIL"; }
 ?>

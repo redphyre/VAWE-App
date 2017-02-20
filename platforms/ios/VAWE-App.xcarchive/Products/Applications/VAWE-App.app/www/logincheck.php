@@ -1,7 +1,7 @@
 <?php
 
-header('content-type: application/json; charset=utf-8');
-header("access-control-allow-origin: *");
+header('content-type: text/html; charset=utf-8');
+header('Access-Control-Allow-Origin: *'); 
 
 include_once('../wp-config.php');
 include_once('../wp-load.php');

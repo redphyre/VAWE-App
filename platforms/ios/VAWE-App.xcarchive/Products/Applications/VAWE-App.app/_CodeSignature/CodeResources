@@ -86,7 +86,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		pJ2UQWwo59D93hjSZ8waxpeMsig=
+		yHnksHpIk6MdR2BC7CkPJ3h2bl4=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		PmmPjA/4hN934NusBYBHHTUpOpc=
+		pNS0BAj/O0fUjnyZHoADxCkKQMc=
 		</data>
 		<key>GoogleMaps.bundle/GMSCacheStorage.momd/Storage.mom</key>
 		<data>
@@ -837,7 +837,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		vIZHveh1LWHgxqUfvKSMITg4goQ=
+		0vFTnHwCSCEiHI3ffyEfDay0Xck=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -857,7 +857,7 @@
 		</data>
 		<key>www/_notes/dwsync.xml</key>
 		<data>
-		AGBCqJRmw8VZ9ESdIuoL8KO7SRI=
+		5cMS02dfPmFpnmUWX8rRVj220lc=
 		</data>
 		<key>www/cordova-js-src/exec.js</key>
 		<data>
@@ -911,6 +911,18 @@
 		<data>
 		UFJKewH9/Py2hdNfmPeqmV/kJng=
 		</data>
+		<key>www/img/Brock's riverside.png</key>
+		<data>
+		0abV1nRn/mFGx70vC2kYh0Moty0=
+		</data>
+		<key>www/img/CATERING (1).png</key>
+		<data>
+		KTfh4cLWvhjK4LIfonM2enlDFxM=
+		</data>
+		<key>www/img/CATERING.png</key>
+		<data>
+		YMnfzDyTF57o1jESErMtijc7yDM=
+		</data>
 		<key>www/img/Cart Green.png</key>
 		<data>
 		030dgOhJ0zWcuWTjPulis31bIKU=
@@ -918,6 +930,10 @@
 		<key>www/img/Cart Pink.png</key>
 		<data>
 		zJVHGej8wuwC8WpnAmFQFYXcJtA=
+		</data>
+		<key>www/img/Flutter My Shutter.png</key>
+		<data>
+		Dp+0bCP58fypfy84blPTQF1Wr5M=
 		</data>
 		<key>www/img/Home Green.png</key>
 		<data>
@@ -942,6 +958,10 @@
 		<key>www/img/Profile Pink.png</key>
 		<data>
 		+avTJgb8KAG5SWMNsm93l2f5f8I=
+		</data>
+		<key>www/img/Rev. Pamela A. Mann.png</key>
+		<data>
+		4WfOV7wvZBtU/py/PMRVr3CdN94=
 		</data>
 		<key>www/img/Search Green.png</key>
 		<data>
@@ -999,9 +1019,13 @@
 		<data>
 		0FD0Ep5aQcjOBl5eTWbUTWpuPpg=
 		</data>
+		<key>www/img/Wedding in a Box.png</key>
+		<data>
+		ANi0lwnG0Hb0wlaPsAiykk2p5fY=
+		</data>
 		<key>www/img/_notes/dwsync.xml</key>
 		<data>
-		orlOyZjNchBWBAQlBmdiUA9PGek=
+		D5claWjXw2zVGItu4sUqN5IbXB8=
 		</data>
 		<key>www/img/apple-icon.png</key>
 		<data>
@@ -1049,7 +1073,7 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		1UMH/DQ7e5sWo2SkNzhcczoAZkI=
+		rVUd2vZTrUDBn9mbPN0XeX+WUvo=
 		</data>
 		<key>www/js/_notes/dwsync.xml</key>
 		<data>
@@ -1079,13 +1103,17 @@
 		<data>
 		KrPqS599SraWyqA+O198FxbAuyg=
 		</data>
+		<key>www/loadmessages.php</key>
+		<data>
+		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+		</data>
 		<key>www/login.php</key>
 		<data>
 		9PnTk8IpnJrVkihb5GdF6y4QIYc=
 		</data>
 		<key>www/logincheck.php</key>
 		<data>
-		zyk2a16rLg2JPnSy3Yj1nhixiyE=
+		na4xX7I9044299uPRJZLOSBP9VA=
 		</data>
 		<key>www/plugins/cordova-plugin-googlemaps/www/googlemaps-cdv-plugin.js</key>
 		<data>
@@ -1105,7 +1133,7 @@
 		</data>
 		<key>www/sendmessage.php</key>
 		<data>
-		VdmzF0QJNxxOAWSzgMXn//dZMxY=
+		Ta+CET8yRv6TX2LxBn5aYBGmVNo=
 		</data>
 		<key>www/vendor.html</key>
 		<data>
@@ -1113,15 +1141,19 @@
 		</data>
 		<key>www/vendorlist.php</key>
 		<data>
-		1Ps0qs+wD2hkMp3/z9F0MMvAJHU=
+		Ttag4Yyp8n/y6Q3GDoxTb/bbipk=
 		</data>
 		<key>www/vendorlogin.php</key>
 		<data>
-		7UqN2gdlPqKzR1WUm2Aa7ewf0D4=
+		dvvVPq+flNAtEZY5dD4PIq1JcEw=
+		</data>
+		<key>www/vendorloginc.php</key>
+		<data>
+		QYFVBx90jAEqRb4mc9dBFuWTPfE=
 		</data>
 		<key>www/vendorpull.php</key>
 		<data>
-		WQU8RlR1JcE1UqH/NPIU7uhLY40=
+		7Nz2pv5iS+vWfZWseREfuVAzEn0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -1350,11 +1382,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pJ2UQWwo59D93hjSZ8waxpeMsig=
+			yHnksHpIk6MdR2BC7CkPJ3h2bl4=
 			</data>
 			<key>hash2</key>
 			<data>
-			mCWglq2dexS8vYa45G0xXPpHdBxNFMC4UU8RWNf10W0=
+			eoSn72iFG1z24QvUxziBhHxOqqrP3Je6ClwSi4HiNWA=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -1372,11 +1404,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PmmPjA/4hN934NusBYBHHTUpOpc=
+			pNS0BAj/O0fUjnyZHoADxCkKQMc=
 			</data>
 			<key>hash2</key>
 			<data>
-			FeIw4wC5vtI6asgqmY72k/N9siUwy0Gyjv+9NRCzdzU=
+			oImROQAdO4EELblfqiarFELEvYFxTvIQCZlZOZja/EY=
 			</data>
 		</dict>
 		<key>GoogleMaps.bundle/GMSCacheStorage.momd/Storage.mom</key>
@@ -2899,11 +2931,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vIZHveh1LWHgxqUfvKSMITg4goQ=
+			0vFTnHwCSCEiHI3ffyEfDay0Xck=
 			</data>
 			<key>hash2</key>
 			<data>
-			XcYwcBLssfKCoxNPLfkjmORZuy3QgBb1vk4ftxBNg38=
+			NkTvEKfHt2Pb24uF0xSqoE+1oDzzyPF9xLi/2CKkuTQ=
 			</data>
 		</dict>
 		<key>archived-expanded-entitlements.xcent</key>
@@ -2943,11 +2975,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AGBCqJRmw8VZ9ESdIuoL8KO7SRI=
+			5cMS02dfPmFpnmUWX8rRVj220lc=
 			</data>
 			<key>hash2</key>
 			<data>
-			uE8+gMRneUYearQImDnpSt5iQTCXAK1QeJnzoXJRDqI=
+			Rk8e3rP8d2GZ6xM41VtCkzlQieVVmXs3dL7ZzQz7UX0=
 			</data>
 		</dict>
 		<key>www/cordova-js-src/exec.js</key>
@@ -3093,6 +3125,39 @@
 			SPkrqHzXoCUT8kb/bX2DpIU+ODZPkMHvAZ1CKM1BpKY=
 			</data>
 		</dict>
+		<key>www/img/Brock's riverside.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0abV1nRn/mFGx70vC2kYh0Moty0=
+			</data>
+			<key>hash2</key>
+			<data>
+			oAChk9GNIcjG2mUeEcj8ZRTFpTq+cLz7/5mS7wzz1RE=
+			</data>
+		</dict>
+		<key>www/img/CATERING (1).png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KTfh4cLWvhjK4LIfonM2enlDFxM=
+			</data>
+			<key>hash2</key>
+			<data>
+			sLQvLbrGJxrJBbmXXdnpHpBD07ws3ekKFUkn/JLpndk=
+			</data>
+		</dict>
+		<key>www/img/CATERING.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YMnfzDyTF57o1jESErMtijc7yDM=
+			</data>
+			<key>hash2</key>
+			<data>
+			dD32azalkImxkTwRPre1yHM02yaJ68gGI5C5EqpsM0g=
+			</data>
+		</dict>
 		<key>www/img/Cart Green.png</key>
 		<dict>
 			<key>hash</key>
@@ -3113,6 +3178,17 @@
 			<key>hash2</key>
 			<data>
 			N68OIVQKnWysz6cqJRex7LPtHdc6PJyixQxIVICrq4A=
+			</data>
+		</dict>
+		<key>www/img/Flutter My Shutter.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Dp+0bCP58fypfy84blPTQF1Wr5M=
+			</data>
+			<key>hash2</key>
+			<data>
+			vEyQVGt2oJP4MZD7oynJcZ3KYl86lwoqW7s6uyvAP1M=
 			</data>
 		</dict>
 		<key>www/img/Home Green.png</key>
@@ -3179,6 +3255,17 @@
 			<key>hash2</key>
 			<data>
 			OHofDxLiBpnLru8qCrV/Odi7ZV7mS14Ud6sAzZkua44=
+			</data>
+		</dict>
+		<key>www/img/Rev. Pamela A. Mann.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4WfOV7wvZBtU/py/PMRVr3CdN94=
+			</data>
+			<key>hash2</key>
+			<data>
+			TubwJF1+0UVa5cZguXDyS92C+YpSYrSgMDanzSUcIZE=
 			</data>
 		</dict>
 		<key>www/img/Search Green.png</key>
@@ -3335,15 +3422,26 @@
 			HCGOjvBWQX6bstWjCwbor84ASILUVYXt+1touSa3HXY=
 			</data>
 		</dict>
+		<key>www/img/Wedding in a Box.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ANi0lwnG0Hb0wlaPsAiykk2p5fY=
+			</data>
+			<key>hash2</key>
+			<data>
+			Z36YFtJNQ/sa+7fCaWRFzYBVWI2QpOGbQ3LQcZ2uJVw=
+			</data>
+		</dict>
 		<key>www/img/_notes/dwsync.xml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			orlOyZjNchBWBAQlBmdiUA9PGek=
+			D5claWjXw2zVGItu4sUqN5IbXB8=
 			</data>
 			<key>hash2</key>
 			<data>
-			wTQOsP6bDfUUrgnGMaqJQb28agyfxlke3y7uJZosS9s=
+			jL6bTLRZrZ4TnUS9mFRGxrWQeVMe64oewg0S2Q1Vdcg=
 			</data>
 		</dict>
 		<key>www/img/apple-icon.png</key>
@@ -3471,11 +3569,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1UMH/DQ7e5sWo2SkNzhcczoAZkI=
+			rVUd2vZTrUDBn9mbPN0XeX+WUvo=
 			</data>
 			<key>hash2</key>
 			<data>
-			IhO9ZL79MfVcTlLzER2QDpGCoR+RNTxpBgl6u16TlQw=
+			+i2+CLTdChQpYePjsSG9+R7QhUorAd20KO+pKnGWDTg=
 			</data>
 		</dict>
 		<key>www/js/_notes/dwsync.xml</key>
@@ -3555,6 +3653,17 @@
 			SbjxxMeLPZe7CW3OxzZC0iZ54uxO4b1ryCls4RcHe6s=
 			</data>
 		</dict>
+		<key>www/loadmessages.php</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+			</data>
+			<key>hash2</key>
+			<data>
+			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+			</data>
+		</dict>
 		<key>www/login.php</key>
 		<dict>
 			<key>hash</key>
@@ -3570,11 +3679,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zyk2a16rLg2JPnSy3Yj1nhixiyE=
+			na4xX7I9044299uPRJZLOSBP9VA=
 			</data>
 			<key>hash2</key>
 			<data>
-			fhuLpqG4MBo6xNLuEq9HATzqmK41U0UhFq9oJ2O5BH8=
+			2k2E0nPe4T2W155oOGhkhXl7t15E2tuFIxDCX7gCPjw=
 			</data>
 		</dict>
 		<key>www/plugins/cordova-plugin-googlemaps/www/googlemaps-cdv-plugin.js</key>
@@ -3625,11 +3734,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VdmzF0QJNxxOAWSzgMXn//dZMxY=
+			Ta+CET8yRv6TX2LxBn5aYBGmVNo=
 			</data>
 			<key>hash2</key>
 			<data>
-			kjsHqAl6AqT/qSRa+8GTSPLaGu2qChqSW1Oo252EMD4=
+			JIJTUviEw+WEGN45J/bK6W24pZ5Pr1JOU5h7O3Ufkns=
 			</data>
 		</dict>
 		<key>www/vendor.html</key>
@@ -3647,33 +3756,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1Ps0qs+wD2hkMp3/z9F0MMvAJHU=
+			Ttag4Yyp8n/y6Q3GDoxTb/bbipk=
 			</data>
 			<key>hash2</key>
 			<data>
-			IYLwLKblOy7G4p+tk9aaktboy72L0Hw/GGju4s1VTko=
+			U3MzZZS0kq9YJKAgB7rwUdmF2bffmFW4keZRcP+Vniw=
 			</data>
 		</dict>
 		<key>www/vendorlogin.php</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7UqN2gdlPqKzR1WUm2Aa7ewf0D4=
+			dvvVPq+flNAtEZY5dD4PIq1JcEw=
 			</data>
 			<key>hash2</key>
 			<data>
-			1JeQvSGZN9xrn5DYIIryTVg3LDtN+RxTc8qW1+CVeAo=
+			LcjDeMdUanQUJ/h+nODNVRBn7dpjDcCUmitCIdIWE7A=
+			</data>
+		</dict>
+		<key>www/vendorloginc.php</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QYFVBx90jAEqRb4mc9dBFuWTPfE=
+			</data>
+			<key>hash2</key>
+			<data>
+			3dXJi4DYCZXAYFqdiHBDcXZOEyXsMP1anMOYEFQGrmQ=
 			</data>
 		</dict>
 		<key>www/vendorpull.php</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WQU8RlR1JcE1UqH/NPIU7uhLY40=
+			7Nz2pv5iS+vWfZWseREfuVAzEn0=
 			</data>
 			<key>hash2</key>
 			<data>
-			YEMD43Tp6aA1ve4vmJAaKwBymihGRQMCV3CibjBAy2w=
+			0tXdiLcdZdNHYzluP92vvLdWTPgWroCTeFKb+VN67kQ=
 			</data>
 		</dict>
 	</dict>

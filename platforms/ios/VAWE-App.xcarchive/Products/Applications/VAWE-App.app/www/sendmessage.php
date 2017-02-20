@@ -1,4 +1,7 @@
 <?php
+header("Content-Type: text/html; charset=ISO-8859-1");
+header('Access-Control-Allow-Origin: *'); 
+
 $message = $_GET['message'];
 $user = $_GET['user'];
 $vendor = $_GET['vendor'];
