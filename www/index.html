@@ -214,18 +214,17 @@
 	})
 	$(document).on( "pagecreate", "#page1", function(e) {
 		e.preventDefault();
-		var slideIndex = 0;
 		carousel();
 		$(".mySlides").on("swipeleft", function() {
 			$(".mySlides").removeClass("w3-animate-left");
 			$(".mySlides").addClass("w3-animate-right");
-			plusDivs(-1);
+			plusDivs(1);
 		});
 
 		$(".mySlides").on("swiperight", function() {
 			$(".mySlides").removeClass("w3-animate-right");
 			$(".mySlides").addClass("w3-animate-left");
-			plusDivs(1);
+			plusDivs(-1);
 		});
 	})
 	function changePage(vendorID) {
@@ -258,12 +257,12 @@
 		  x[i].style.display = "none"; 
 		}
 		for (i = 0; i < dots.length; i++) {
-			dots[i].className = dots[i].className.replace(" w3-white", "");
+			dots[i].className = dots[i].className.replace(" w3-pink", "");
 		}
 		slideIndex++;
 		if (slideIndex > x.length) {slideIndex = 1} 
 		x[slideIndex-1].style.display = "block";
-		dots[slideIndex-1].className += " w3-white";
+		dots[slideIndex-1].className += " w3-pink";
 		setTimeout(resetCarouselAnimation, 7000);
 		setTimeout(carousel, 7000); // Change image every 2 seconds
 	}
@@ -286,10 +285,10 @@
 			x[i].style.display = "none";  
 		}
 		for (i = 0; i < dots.length; i++) {
-			dots[i].className = dots[i].className.replace(" w3-white", "");
+			dots[i].className = dots[i].className.replace(" w3-pink", "");
 		}
 		x[slideIndex-1].style.display = "block";  
-		dots[slideIndex-1].className += " w3-white";
+		dots[slideIndex-1].className += " w3-pink";
 	}
 
     </script>
@@ -303,19 +302,22 @@
 			<img class="mySlides w3-animate-right" src="img/CATERING (1).png">
 			<img class="mySlides w3-animate-right" src="img/Rev. Pamela A. Mann.png">
 			<img class="mySlides w3-animate-right" src="img/CATERING.png">
-			<div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-			    <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-   				<div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-				<span class="w3-badge demo w3-border w3-transparent" onclick="currentDiv(1)" style="height:15px;"></span>
-				<span class="w3-badge demo w3-border w3-transparent" onclick="currentDiv(2)" style="height:15px;"></span>
-				<span class="w3-badge demo w3-border w3-transparent" onclick="currentDiv(3)" style="height:15px;"></span>
+			<div class="w3-center w3-section w3-large w3-text-pink w3-display-bottommiddle" style="width:100%">
+			    <div class="w3-left w3-padding-left w3-hover-text-lime" onclick="plusDivs(-1)">&#10094;</div>
+   				<div class="w3-right w3-padding-right w3-hover-text-lime" onclick="plusDivs(1)">&#10095;</div>
+				<span class="w3-badge demo w3-border w3-border-black w3-lime" onclick="currentDiv(1)" style="height:15px;"></span>
+				<span class="w3-badge demo w3-border w3-border-black w3-lime" onclick="currentDiv(2)" style="height:15px;"></span>
+				<span class="w3-badge demo w3-border w3-border-black w3-lime" onclick="currentDiv(3)" style="height:15px;"></span>
 			</div>
-		</div>
-		<div style="padding-top:5px; padding-bottom:5px;">
-			<img src="img/Brock's riverside.png" style="width:100%!important;">
 		</div>
 		<div style="padding-bottom:5px;">
 			<img src="img/Wedding in a Box.png" style="width:100%!important;">
+		</div>
+		<div style="padding-bottom:5px;">
+			<img src="img/Flutter My Shutter.png" style="width:100%!important;">
+		</div>
+		<div style="padding-bottom:5px;">
+			<img src="img/Brock's riverside.png" style="width:100%!important;">
 		</div>
 	</div>
 	<div data-role="footer" data-position="fixed">
